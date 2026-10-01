@@ -1,0 +1,27 @@
+[
+  {
+    "file": "File:WMAP 2010.png",
+    "name": "wmap_cmb.png",
+    "alt": "All-sky map of tiny temperature fluctuations in the cosmic microwave background, in false color, from the WMAP mission.",
+    "caption": "The cosmic microwave background (WMAP). NASA/WMAP Science Team, Public Domain."
+  },
+  {
+    "file": "File:Photo of Madeline Davis.jpg",
+    "name": "madeline_davis.jpg",
+    "alt": "Portrait photograph of Buffalo LGBTQ activist Madeline Davis.",
+    "caption": "Madeline Davis, first openly lesbian delegate to a major-party national convention (1972)."
+  },
+  {
+    "file": "File:Battle of Blair Mountain miners.jpg",
+    "name": "blair_mountain_miners.jpg",
+    "alt": "Black-and-white photo of armed coal miners during the 1921 Battle of Blair Mountain.",
+    "caption": "Miners at the Battle of Blair Mountain (1921). Kinograms, Public Domain."
+  },
+  {
+    "url": "https://www.eia.gov/totalenergy/data/monthly/pdf/sec7_5.pdf",
+    "name": "eia_generation_mix.pdf",
+    "credit": "U.S. Energy Information Administration (EIA), public domain (U.S. federal work). CORROBORATE per course source-integrity rule.",
+    "alt": "EIA chart of U.S. electricity generation by source over time.",
+    "caption": "U.S. generation mix. Source: EIA (verify against an independent source)."
+  }
+]

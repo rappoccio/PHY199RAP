@@ -1,0 +1,32 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+  <p class="author">$author$</p>
+$endfor$
+$for(institute)$
+  <p class="institute">$institute$</p>
+$endfor$
+$if(date)$
+  <p class="date">$date$</p>
+$endif$
+$if(material)$
+  <style>
+  #title-slide .title-material { margin-top: 0.7em; font-size: 0.58em;
+    text-align: left; max-width: 62%; line-height: 1.35; color: #ffffff; }
+  #title-slide .title-material p { color: #ffffff; margin: 0.25em 0; }
+  #title-slide .title-material strong { color: #ffffff; }
+  #title-slide .title-material em { color: #e8eef7; }
+  #title-slide .title-material a { color: #ffffff; text-decoration: underline;
+    text-underline-offset: 2px; }
+  </style>
+  <div class="title-material">
+    <p><strong>Material:</strong> $material$</p>
+$if(assignment)$
+    <p><strong>Assignment:</strong> $assignment$</p>
+$endif$
+  </div>
+$endif$
+</section>

@@ -1,0 +1,44 @@
+[
+  {
+    "file": "File:Fission chain reaction.svg",
+    "name": "fission_chain_reaction.svg",
+    "alt": "Diagram of a self-sustaining nuclear fission chain reaction: a neutron splits a U-235 nucleus, releasing more neutrons that go on to split further U-235 nuclei.",
+    "caption": "A U-235 fission chain reaction. Public domain (U.S. government work, MC Perez / Nuclear Regulatory Commission). [Verify title in discovery mode if not found.]",
+    "note": "For Slide 4 (U-235 Reaction). Alternative if unavailable: File:Nuclear fission chain reaction.svg."
+  },
+  {
+    "file": "File:Plutonium ring.jpg",
+    "name": "plutonium_ring.jpg",
+    "alt": "Photograph of a small ring of plutonium metal glowing faintly orange from its own radioactive decay heat.",
+    "caption": "A ring of weapons-grade plutonium-239, glowing from its own decay heat. Public domain (U.S. Department of Energy). [Verify title in discovery mode if not found.]",
+    "note": "For Slide 5 (U-238 to Pu-239 Reaction) — illustrative sample photo, matching the style of the U-238 bar photo already on Slide 3."
+  },
+  {
+    "file": "File:Zippe-type gas centrifuge.svg",
+    "name": "zippe_centrifuge.svg",
+    "alt": "Cutaway diagram of a Zippe-type gas centrifuge showing heavier U-238 (dark blue) concentrating at the outer wall and lighter U-235 (light blue) concentrating near the central axis as the cylinder spins.",
+    "caption": "How a gas centrifuge enriches uranium. Public domain, released by the author (Fastfission), commons.wikimedia.org/wiki/File:Zippe-type_gas_centrifuge.svg.",
+    "note": "For Slide 6 (Enriching Uranium). Confirmed public domain — released into the public domain by the author, no further check needed."
+  },
+  {
+    "file": "File:Pressurized Water Reactor 01.svg",
+    "name": "pwr_diagram.svg",
+    "alt": "Schematic diagram of a pressurized-water reactor, showing the pressurized primary coolant loop through the reactor core and steam generator, and the separate secondary steam loop driving the turbine.",
+    "caption": "Pressurized-water reactor (PWR) schematic — the most common reactor type worldwide. [Verify title in discovery mode if not found.]",
+    "note": "For Slide 7 (Types of fission reactors), representing PWR (~74% of world reactors). Alternative: File:PWR nuclear power plant diagram.svg."
+  },
+  {
+    "file": "File:Fast Breeder Reactor diagram.jpg",
+    "name": "fast_breeder_diagram.jpg",
+    "alt": "Diagram of a fast breeder reactor, showing the reactor core surrounded by a fertile U-238 blanket and liquid-metal (sodium) coolant loops.",
+    "caption": "Fast breeder reactor schematic — converts U-238 into Pu-239 faster than it consumes fissile fuel. [Verify title in discovery mode if not found.]",
+    "note": "For Slide 7 (Types of fission reactors), representing the breeder-reactor bullet specifically requested. Verify license before use — if non-free, fall back to File:DFR reactor schematic.png (Dounreay Fast Reactor, likely UK government / OGL) found via search."
+  },
+  {
+    "file": "File:Molten Salt Reactor.svg",
+    "name": "molten_salt_reactor.svg",
+    "alt": "Schematic diagram of a molten-salt reactor, showing fuel dissolved in liquid salt circulating between the reactor core and a heat exchanger, with a freeze-plug drain tank below the core.",
+    "caption": "Generation IV molten-salt reactor (MSR) design. [Verify title in discovery mode if not found.]",
+    "note": "For Slide 29 (Gen 4 Reactors), specifically illustrating the molten-salt design the professor asked to cover."
+  }
+]

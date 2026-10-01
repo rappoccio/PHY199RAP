@@ -1,0 +1,796 @@
+---
+title: "Lecture 2 — Energy generation"
+subtitle: "PHY199-RAP · Energy in the 21st Century"
+author: "Dr. Salvatore Rappoccio"
+date: "2026-08-31"
+material: "Lecture notes on [electricity and magnetism](https://en.wikipedia.org/wiki/Electromagnetism), nuclear [fission](https://en.wikipedia.org/wiki/Nuclear_fission) and [fusion](https://en.wikipedia.org/wiki/Nuclear_fusion), [Levelized Cost](https://en.wikipedia.org/wiki/Levelized_cost_of_electricity), [the grid](https://en.wikipedia.org/wiki/Electrical_grid). *Skill taught: note-taking.*"
+assignment: "[Academic Integrity at UB course on UBLearns](https://www.buffalo.edu/academic-integrity/resources/Academic-Integrity-at-UB.html), with quiz. Share badge on UBLearns."
+format:
+  # PowerPoint is the default output (listed first): quarto render produces the
+  # editable, UB-branded .pptx you drop figures and edits into.
+  pptx:
+    reference-doc: ../../template/UB-template.pptx
+    slide-level: 2
+  # reveal.js (UB theme) kept as a secondary HTML format.
+  revealjs:
+    theme: [default, ub.scss]
+    slide-number: true
+    center: false
+    progress: false
+    math: katex
+    transition: slide
+    embed-resources: true
+    include-after-body:
+      text: |
+        <script>
+        window.addEventListener('load', function () {
+          document.querySelectorAll('img[data-src]').forEach(function (i) {
+            var s = i.getAttribute('data-src');
+            if (s && !i.getAttribute('src')) { i.setAttribute('src', s); }
+          });
+        });
+        </script>
+    template-partials:
+      - title-slide.html
+---
+
+<!--
+====================================================================
+DRAFT / CONTENT QUARRY for Sal to mine (per project workflow).
+This .qmd is raw material: cited summaries, suggested graphics (with
+alt text + a per-image manifest.json for tools/fetch_lecture_media.py),
+and simple calculations. Sal restructures into the final .pptx.
+
+VOICE NOTES (from Lecture 1 final): dated/chronological slide titles,
+a recurring forward-reference tag ("relevant later for ___"), a running
+pop-culture motif, blunt/funny/morally-direct tone over rigorous physics,
+and a Buffalo throughline. I left a LIGHT optional Game-of-Thrones motif
+threaded through (continuity with L1: White Walkers = climate, the Sun =
+"the only dragon that actually works") — keep, swap, or cut to taste.
+
+GRAPHICS: entries tagged  >>> SUGGESTED GRAPHIC  are proposals. Real
+photos/portraits are queued in images/manifest.json — run
+  python3 ../../tools/fetch_lecture_media.py manifest.json --out images
+to download them with license/attribution checks (the script flags and
+skips any non-free file). Schematic/cartoon diagrams are noted where a
+hand-drawn or Commons figure would help; those are yours to draw or pull.
+
+CALCULATIONS: all numbers below were computed and re-checked this session;
+the working is in the speaker notes so you can defend them in Q&A.
+====================================================================
+-->
+
+# Skill of the week: note-taking
+
+## The skill that makes every other class work
+
+- This is a **UB Seminar** — we teach the *meta-skills*. First one up: **taking notes**
+- Last week's rule, restated: **process, don't transcribe**
+- The old "longhand beats laptops" study (Mueller & Oppenheimer, 2014) had a **weak replication** (Urry et al., 2021) — so it's *not* pen-vs-laptop
+- The real lesson: notes are for **thinking**, not stenography. If you're just copying, you've turned your brain off
+- **This will be relevant next week** — the Week 3 quiz is *on note-taking*
+
+::: notes
+Callback to Lecture 1's "process, don't transcribe" slide, now the formal skill of the
+week (course schedule Wk 2 lists "Skill: note-taking"; Wk 3 quiz is on it). Model the
+course's sourcing ethic again: cite the original AND the replication, don't oversell.
+Sources: Mueller & Oppenheimer (2014, Psychological Science); Urry et al. (2021,
+Psychological Science) — registered direct replication + mini meta-analysis.
+:::
+
+## The Cornell method: a note page that grades itself
+
+- **1950s, Cornell:** Walter Pauk designed a page layout that forces processing
+- Split the page: **narrow left column** (cues/questions), **wide right column** (notes in class), **strip along the bottom** (a 2-line summary you write *after*)
+- The trick: cover the right side, and your left-column questions become a **self-quiz**
+- It bakes in the two things that actually work (next slide): **retrieval** and **spacing**
+
+>>> SUGGESTED GRAPHIC: simple schematic of a Cornell-method page — a rectangle divided
+into the three zones (left cue column, right note column, bottom summary bar), labeled.
+This is a cartoon/diagram (allowed to draw). Alt: "Diagram of a Cornell note page split
+into a left cue column, a wider right notes column, and a bottom summary strip."
+
+::: notes
+Pauk formalized this at Cornell (his book *How to Study in College*, 1962, is the primary
+source). Keep it concrete — maybe show my own handwritten page. The point isn't the exact
+layout, it's that the layout forces you to (a) write questions and (b) summarize.
+Source: Pauk & Owens, *How to Study in College*; Cornell Learning Strategies Center.
+:::
+
+## What the evidence says actually works
+
+- Two techniques rate **high-utility** in the research: **practice testing** (quiz yourself) and **spacing** (spread study over days)
+- **Rereading** and **highlighting** rate **low-utility** — they *feel* productive and mostly aren't
+- That's *why* this course runs **low-stakes quizzes** — it's retrieval practice, by design
+- So take notes you can be **quizzed from**, then actually quiz yourself — don't just admire your highlighter
+
+::: notes
+Dunlosky et al. (2013, Psychological Science in the Public Interest) reviewed 10 techniques;
+practice testing + distributed practice came out on top, highlighting/rereading at the bottom.
+Tie explicitly to our grading structure (quizzes = retrieval practice). Accessible version:
+"Strengthening the Student Toolbox," American Educator (2013).
+:::
+
+## Worked example: notes on a 3-minute "lecture"
+
+- Topic on the board: **"Should you wash rice before cooking?"** — a tiny, self-contained talk
+- Watch a **Cornell page** fill in over the next few slides — we'll build it live
+- Your job *in the moment*: the **right column** — capture the ideas in shorthand, **don't transcribe**
+- The **left column** and the **summary** come *after* class — that's where the actual learning happens
+
+::: notes
+Deliberately a non-physics, everyday topic so the *method* is the star, not the content. Bonus: it has a
+satisfying "the folk wisdom is wrong" turn, which is exactly what good notes should capture — a claim AND
+its correction. Narrate what I'd write as if it were a real mini-lecture. Rice-fact sources are in the
+notes on the following slides.
+:::
+
+## In class — the RIGHT column (jot, don't transcribe)
+
+Raw notes as the talk runs — abbreviations, arrows, no full sentences:
+
+- Wash rice? 2 reasons ppl give → (1) "less sticky" (2) "cleaner"
+- Cloudy rinse water = **surface starch** washing off
+- BUT stickiness ← **amylopectin** released *while cooking*, not surface starch
+- → recent study: washing had **no effect** on stickiness/hardness; *variety* matters more
+
+::: notes
+Model the shorthand out loud: arrows for "leads to / because," "ppl" for people, dropping vowels. The
+point is that I'm writing the *logic*, not the sentences. Facts: The Conversation, "Do you need to wash
+rice before cooking? Here's the science" (academic-authored), summarizing a study that found washing did
+not change stickiness/hardness.
+:::
+
+## In class — RIGHT column, continued
+
+- So what *does* washing actually remove?
+- **Debris**: dust, husk fragments, tiny stones — matters most where processing is less tidy
+- **Microplastics**: ~**20%** off uncooked rice (~**40%** for instant rice)
+- **Arsenic**: ~**90%** of *bio-accessible* arsenic (rice takes up more arsenic than most crops)
+- **Tradeoff** ⚠ → washing / excess water also rinses out nutrients (Fe, Zn, Cu; enriched rice loses its vitamin coating)
+
+::: notes
+Numbers from the same Conversation summary plus the arsenic-cooking literature (Menon et al., Univ. of
+Sheffield / *Science of the Total Environment*, 2020; and the excess-water study "Cooking rice in excess
+water reduces both arsenic and enriched vitamins in the cooked grain," 2016). At first-year level the full
+citations live here in the notes; the slide only carries the shorthand a student would actually write.
+:::
+
+## After class — the LEFT column (write the questions)
+
+Cover the notes. For each chunk, write in the cue column the **question it answers**:
+
+- *Does washing make rice less sticky?*
+- *What actually causes stickiness?*
+- *What does washing really remove?*
+- *What's the catch / tradeoff?*
+- *Bottom line — wash or not?*
+
+::: notes
+This is the highest-value five minutes of the whole method: turning notes into retrieval cues. If you
+can't write a question for a chunk, you didn't really get it — go back to that chunk. These questions
+become the self-quiz.
+:::
+
+## After class — the SUMMARY strip (2 lines, your words)
+
+> Washing rice clears surface starch, ~20% of microplastics, and ~90% of bio-accessible arsenic — but **not** stickiness (that's amylopectin from cooking), and it also rinses out some nutrients. **Wash for cleanliness, not for fluffiness.**
+
+- Write it from memory, in **your own words** — if you can't, reread *once*, then try again
+- One good summary now saves you rereading the whole page later
+
+::: notes
+The summary is a compression test; "your own words" is the entire point, because copying the slide back
+defeats the processing. Two lines, no more.
+:::
+
+## The payoff: cover the notes, quiz yourself
+
+Left column only — can you answer without peeking?
+
+- *Does washing reduce stickiness?* → **No.** Stickiness is amylopectin released during cooking; washing only clears surface starch
+- *What's the tradeoff?* → Removes ~90% of bio-accessible arsenic **but** also strips iron/zinc + enriched vitamins
+- Missed one? **That** is the bit to restudy — this is retrieval + spacing, exactly what the evidence rewards
+- **Relevant next week:** the Week-3 quiz runs the same loop — cue → recall
+
+::: notes
+Bring it back to the two high-utility techniques (practice testing + distributed practice) and to our own
+low-stakes quizzes. The rice topic is disposable; the loop — notes -> cues -> summary -> self-quiz — is
+the transferable skill.
+:::
+
+## The finished Cornell page (all three zones)
+
+:::: {.columns}
+
+::: {.column width="32%"}
+**Cues / questions**
+
+- Less sticky?
+- Cause of stickiness?
+- What's removed?
+- Tradeoff?
+- Bottom line?
+:::
+
+::: {.column width="68%"}
+**Notes (in class)**
+
+- Wash rice → claims: "less sticky" + "cleaner"
+- Sticky ← amylopectin *from cooking*; washing ≠ less sticky
+- Removes: debris; microplastics ~20% (~40% instant); arsenic ~90% bio-accessible
+- ⚠ also removes Fe / Zn / Cu + enriched vitamins
+:::
+
+::::
+
+**Summary:** Wash to remove grit and contaminants, not to change texture — and know you're trading away some nutrients.
+
+::: notes
+The whole page, assembled. A cleaner cartoon of the three-zone layout (the schematic suggested on the
+earlier Cornell slide) with this rice example dropped into the zones would work well here; or show my own
+handwritten version.
+:::
+
+
+## Note-taking — sources
+
+- [Mueller & Oppenheimer (2014), *Psychological Science*](https://journals.sagepub.com/doi/abs/10.1177/0956797614524581) · [Urry et al. (2021) — replication](https://journals.sagepub.com/doi/abs/10.1177/0956797620965541)
+- [Dunlosky et al. (2013), *Psych. Science in the Public Interest*](https://journals.sagepub.com/doi/abs/10.1177/1529100612453266) · [accessible version, *American Educator*](https://www.aft.org/ae/fall2013/dunlosky)
+- Cornell method: Pauk & Owens, *How to Study in College*; [Cornell Learning Strategies Center](https://lsc.cornell.edu/how-to-study/taking-notes/cornell-note-taking-system/)
+- Worked example (washing rice): [The Conversation — "Do you need to wash rice? Here's the science"](https://theconversation.com/do-you-need-to-wash-rice-before-cooking-heres-the-science-204692) · arsenic/nutrient tradeoff: ["Cooking rice in excess water reduces both arsenic and enriched vitamins…" (2016)](https://pubmed.ncbi.nlm.nih.gov/26515534/); [Menon et al. 2020, *Sci. Total Environ.*](https://www.sciencedirect.com/science/article/pii/S0048969720368728)
+
+# Electricity and magnetism
+
+## What is electricity, really?
+
+- **Charge** is a property of matter (electrons carry it); pushing charge around is the whole game
+- Three words you need:
+  - **Voltage** (volts) — the *push* (like water pressure)
+  - **Current** (amps) — the *flow rate* (like gallons per second)
+  - **Power** (watts) — how fast energy is delivered: $P = V \times I$
+- Your phone charger, Niagara Falls, and a nuclear plant differ only in **scale**
+
+>>> SUGGESTED GRAPHIC: cartoon water-tower analogy — pressure = voltage, pipe flow =
+current, waterwheel = the device doing work. (Diagram, allowed to draw.)
+
+::: notes
+Keep the water analogy honest but don't oversell it (it breaks for AC/reactance later).
+$P=VI$ is the one equation they should leave with. A US wall outlet is ~120 V; a phone
+charger pulls ~0.15 A → ~18 W. Source: Britannica (electric current, voltage);
+HyperPhysics (Georgia State) for the water analogy done carefully.
+:::
+
+## 1820: Ørsted's compass twitches
+
+- Hans Christian **Ørsted** is lecturing when he notices a **compass needle deflect** next to a wire carrying current
+- Bombshell: **electricity and magnetism are the same thing**, wearing two hats
+- A **current makes a magnetic field**. Hold that thought — the reverse is where the power comes from
+
+![Hans Christian Ørsted (1777–1851). Portrait by C. W. Eckersberg, public domain.](images/oersted.jpg){height="380"}
+
+::: notes
+Ørsted, Copenhagen, spring 1820 — the founding moment of electromagnetism. Ampère then
+quantified the force within months. This is the "electricity → magnetism" direction;
+Faraday (next slide) closes the loop the other way, and *that* loop is every generator.
+Source: Britannica (Hans Christian Ørsted; Ampère); Royal Society historical accounts.
+:::
+
+## 1831: Faraday runs it backwards
+
+- Michael **Faraday** shows the reverse: a **changing magnetic field pushes a current** through a nearby wire
+- **Faraday's law of induction** — the single most important sentence in this whole course:
+  $$ \mathcal{E} = -\frac{d\Phi_B}{dt} $$
+- In English: **move a magnet past a coil of wire, and you make electricity.** No fuel required to state the principle — only to *move the magnet*
+
+![Michael Faraday (1791–1867). Portrait by Thomas Phillips, 1842, public domain.](images/faraday.jpg){height="300"}
+
+<!-- Faraday's 1831 induction-ring apparatus was NOT downloaded (the script skipped it) —
+drop it in here if you find a free Commons file; the portrait stands in for now. -->
+
+::: notes
+$\Phi_B$ = magnetic flux (field × area through the loop); the EMF is minus its rate of
+change (Lenz's law = the minus sign, nature pushing back). Don't derive it — land the
+sentence: *changing magnetic flux → voltage*. Primary source: Faraday, "Experimental
+Researches in Electricity" (1832, Phil. Trans. R. Soc.); Royal Society commentary
+(Phil. Trans. A 373:20140208, 2015) is a clean modern anchor.
+:::
+
+## Every power plant is the same machine
+
+- Coal, gas, nuclear, hydro, geothermal, wind — all do **one thing**: spin a magnet inside coils of wire (a **turbine + generator**)
+- The *only* difference is **what spins the turbine**: steam, falling water, or wind
+- **Solar photovoltaic is the lone exception** — it makes current *directly*, no moving parts (we met this in Lecture 1)
+- **Callback:** Niagara's **Adams Plant (1895)** — the first big AC power — was this exact machine, driven by falling water
+
+>>> SUGGESTED GRAPHIC: cartoon cross-section of a generator — turbine blades on a shaft,
+rotating magnet, stationary copper coils, current out. (Diagram, allowed to draw.) Alt:
+"Schematic of a turbine-driven generator: blades spin a shaft holding a magnet inside
+copper coils, inducing an electric current."
+
+::: notes
+This is the payoff of the two previous slides and the unifying idea of the physics half:
+"boil water → spin magnet" is ~80% of the world's electricity. Ties back to Lecture 1's
+Adams Plant / Current Wars slides. The PV exception forward-refs to solar in later weeks.
+Source: DOE energy.gov (how generators/turbines work) — corroborate with Britannica
+(electric generator) per source-integrity rule.
+:::
+
+## 1865: Maxwell writes the whole thing down
+
+- James Clerk **Maxwell** unifies electricity, magnetism, and **light** into four equations
+- His shocker: light *is* an electromagnetic wave — radio, microwaves, X-rays, and visible light are the **same phenomenon** at different frequencies
+- Why you care: this is the physics behind **the grid** (AC at 60 Hz), **wireless charging**, and every screen you own
+
+::: notes
+Don't show the four equations as math to first-years; show them as "the grammar of E&M."
+Maxwell (1865, "A Dynamical Theory of the Electromagnetic Field," Phil. Trans. R. Soc.)
+predicted EM waves travel at c; Hertz confirmed radio waves in 1887. Forward-ref: 60 Hz
+grid frequency comes up in the grid section. Source: Maxwell (1865); Britannica.
+:::
+
+## Electricity & magnetism — sources
+
+- Foundations: [Britannica — Electromagnetism](https://www.britannica.com/science/electromagnetism); [HyperPhysics (Georgia State) — E&M](http://hyperphysics.phy-astr.gsu.edu/hbase/emcon.html)
+- Ørsted/Ampère (1820): [Britannica — Hans Christian Ørsted](https://www.britannica.com/biography/Hans-Christian-Orsted)
+- Faraday (1831–32): [Royal Society commentary on Faraday's *Experimental Researches*](https://royalsocietypublishing.org/doi/10.1098/rsta.2014.0208); [Britannica — Faraday's law](https://www.britannica.com/science/Faradays-law-of-induction)
+- Maxwell (1865): [Britannica — Maxwell's equations](https://www.britannica.com/science/Maxwells-equations)
+- Generators: DOE energy.gov (corroborate w/ Britannica per source rule)
+
+# Nuclear: fission and fusion
+
+## $E = mc^2$: mass is frozen energy
+
+- Einstein (1905): **mass and energy are the same thing.** A tiny bit of mass holds a *staggering* amount of energy
+- The multiplier is $c^2$ — the speed of light, squared — which is enormous
+- **Fully** converting **1 gram** of *anything* would release **≈ 25 GWh** — roughly a **small city's electricity for a day**
+- Nature won't let you convert it all — but nuclear reactions unlock **far more** of it than chemistry (burning) ever can
+
+::: notes
+Worked (re-checked this session): E = m c² = (0.001 kg)(2.998×10⁸ m/s)² ≈ 8.99×10¹³ J
+= 8.99×10¹³ / 3.6×10⁶ ≈ 2.50×10⁷ kWh = 25 GWh. For scale, ~25,000 MWh ≈ what ~2,300 US
+homes use in a year (US avg ~10,800 kWh/home/yr, EIA — corroborate). Chemistry releases
+~a billionth of this per atom; nuclear releases ~a millionth of the rest-mass. That gap
+is the whole story of nuclear energy. Source: Einstein (1905, Annalen der Physik).
+:::
+
+## Why iron sits at the bottom of the valley
+
+- Every nucleus has a **binding energy** — how tightly its protons and neutrons are glued
+- Plot it and you get a **valley** with **iron-56** at the bottom (most tightly bound, most stable)
+- **Two ways downhill = two ways to release energy:**
+  - **Fission:** split a *heavy* nucleus (uranium) → move toward iron → energy out
+  - **Fusion:** join *light* nuclei (hydrogen) → move toward iron → energy out
+- Everything from here is just: *roll downhill toward iron*
+
+![Nuclear binding energy per nucleon vs. mass number — iron-56 sits at the peak; fusion (light nuclei) and fission (heavy nuclei) both release energy by moving toward it. Fastfission, public domain.](images/binding_energy_curve.svg){height="360"}
+
+::: notes
+The binding-energy curve is the single best physics slide of the lecture — fission and
+fusion are the *same idea* (roll toward iron-56) from opposite ends. Peak is actually
+Ni-62 / Fe-56 depending how you measure; "iron" is the right first-year answer.
+Source: Krane, *Introductory Nuclear Physics*; IAEA nuclear data. Commons file candidate:
+"Binding energy curve - common isotopes.svg" (PD).
+:::
+
+## Fission: splitting the heavy stuff
+
+- **1938:** Hahn, Strassmann, **Lise Meitner** and Frisch discover **nuclear fission** — a uranium nucleus split by a neutron
+- Each split throws out **more neutrons** → they split more nuclei → a **chain reaction**
+- Controlled slowly in a **reactor** (steam → turbine → the same machine as before). Uncontrolled, it's a **bomb** — the dark side we cover in Weeks 5–6
+- Meitner did the theory and was **snubbed by the Nobel** — a name worth knowing
+
+![A fission chain reaction: a neutron splits a nucleus into fragments plus more neutrons, which split more. Diagram by MikeRun, CC BY-SA 4.0.](images/fission_chain.svg){height="360"}
+
+::: notes
+Meitner & Frisch (1939, Nature) named and explained fission; Hahn got the 1944 Chemistry
+Nobel alone — a well-documented snub worth flagging (ties to the course's justice thread).
+Forward-ref to Weeks 5–6 (Hiroshima, Church Rock, the human cost). Keep the reactor-vs-bomb
+distinction crisp: same physics, wildly different rate. Source: Meitner & Frisch (1939);
+Rhodes, *The Making of the Atomic Bomb* (secondary but rigorous).
+:::
+
+## A gram of uranium (the simple calculation)
+
+- Fissioning **1 gram of uranium-235** releases **≈ 23 MWh** of energy
+- That single gram equals about **3 tonnes of coal** (a wheelbarrow of rock vs. a fingernail's worth of metal)
+- Fission of **1 kg** ≈ **22.8 GWh** ≈ enough for **~2,000 US homes for a year**
+- The catch isn't the physics — it's the **waste, the mining, and the weapons** (Weeks 5–6)
+
+| Fuel | Energy from 1 gram | Equivalent |
+|------|:------------------:|:----------:|
+| Coal | ~0.007 kWh | — |
+| Uranium-235 (fission) | **~23,000 kWh** | ~3 tonnes of coal |
+| Any mass (full $E=mc^2$) | ~25,000,000 kWh | the theoretical ceiling |
+
+::: notes
+Re-checked this session. 1 kg U-235 fission: N = 6.022×10²³/0.235 ≈ 2.56×10²⁴ atoms;
+×200 MeV/fission ×1.602×10⁻¹³ J/MeV ≈ 8.2×10¹³ J ≈ 22.8×10⁶ kWh = 22.8 GWh. So 1 g ≈
+22,800 kWh ≈ 23 MWh. Coal ~24 MJ/kg → 1 g coal ≈ 0.0067 kWh; 8.2×10¹³ J / 24×10⁶ J/kg ≈
+3.4×10⁶ kg ≈ 3,400 t coal per kg U (≈3 t per gram). Note fission taps only ~0.09% of the
+rest-mass — even nuclear leaves most of $E=mc^2$ on the table. Source: IAEA; Krane.
+:::
+
+## Fusion: the Sun's furnace
+
+- **Fusion** joins light nuclei (hydrogen → helium) and powers **every star**, including the **Sun**
+- It's the cleanest energy imaginable: fuel from **water**, no long-lived waste, no meltdown, no CO₂
+- The deuterium in **1 liter of water** holds fusion energy comparable to **~300 liters of gasoline**
+- One catch: it needs **~100 million °C**. The Sun cheats with crushing gravity; we don't have that
+
+![The Sun in ultraviolet light — the churning surface of our nearest fusion reactor. NASA/SDO (AIA), public domain. *(Federal image — corroborate with an independent solar-observatory source per the course source rule.)*](images/sun.jpg){height="360"}
+
+::: notes
+Motif hook (optional, continues L1's Game of Thrones thread): "the Sun is the only dragon
+that actually works." Deuterium-in-water figure (re-checked this session): ~1 D per 6,420 H;
+1 L water ≈ 111 mol H → ~1.0×10²² D atoms. Pure water has no tritium, so the realistic route
+is catalyzed D–D fusion at ~7.2 MeV per deuteron consumed → ~1.2×10¹⁰ J ≈ 3,300 kWh ≈ the
+energy in ~350 liters of gasoline (gasoline ~34 MJ/L). That's the origin of the classic
+"deuterium in 1 L of water ≈ 300 L of gasoline" line. Order-of-magnitude only. Source: ITER
+Organization (fusion basics); Britannica (nuclear fusion).
+:::
+
+## 2022–2039: fusion's real, slow timeline
+
+- **Dec 2022, Livermore (NIF):** for the first time, a fusion shot released **more energy than the lasers delivered to the fuel** — scientific "ignition," peer-reviewed and independently repeated
+- **ITER** (France, a 35-nation project) is the big test reactor — but it just **slipped a decade**: **first plasma now ~2034**, full deuterium–tritium burn **~2039**, at **billions over budget**
+- Honest verdict: fusion is **real physics and still decades from your wall socket.** Don't let anyone sell you "five years away"
+
+::: notes
+NIF ignition: Abu-Shawareb et al. (2024, Phys. Rev. Lett. 132, 065102) — peer-reviewed;
+target gain >1 (2.05 MJ out vs 2.05 MJ laser to target), later shots exceeded it. Careful
+framing: that's energy to the *fuel*, not wall-plug breakeven — the lasers drew ~300 MJ.
+ITER revised baseline (announced 2024): first plasma 2034, D-T operation 2039, ~€5B over
+prior estimate — cite Physics World / ITER Organization. Gen Z explainer: Kurzgesagt
+"Fusion Power Explained" (verify link at build). Sources on the sources slide.
+:::
+
+## Nuclear — sources
+
+- $E=mc^2$: [Einstein (1905), *Annalen der Physik*](https://onlinelibrary.wiley.com/doi/10.1002/andp.19053231314) (English trans. widely available)
+- Fission discovery: [Meitner & Frisch (1939), *Nature*](https://www.nature.com/articles/143239a0); [Britannica — nuclear fission](https://www.britannica.com/science/nuclear-fission)
+- Binding energy / data: [IAEA Nuclear Data Services](https://www-nds.iaea.org/); Krane, *Introductory Nuclear Physics*
+- Fusion basics: [ITER Organization — What is fusion?](https://www.iter.org/sci/whatisfusion); [Britannica — nuclear fusion](https://www.britannica.com/science/nuclear-fusion)
+- NIF ignition: [Abu-Shawareb et al. (2024), *Phys. Rev. Lett.*](https://link.aps.org/doi/10.1103/PhysRevLett.132.065102)
+- ITER delay: [Physics World — ITER hit by decade-long delay](https://physicsworld.com/a/iter-fusion-reactor-hit-by-massive-decade-long-delay-and-e5bn-price-hike/)
+
+# What does it cost? Levelized Cost of Electricity
+
+## LCOE: the only fair way to compare
+
+- You can't compare a solar farm and a gas plant by sticker price — they last different years and run different hours
+- **Levelized Cost of Electricity (LCOE)** puts everything on **one number: dollars per unit of energy**
+$$ \text{LCOE} = \frac{\text{lifetime costs (build + fuel + upkeep)}}{\text{lifetime energy produced}} $$
+- Think **\$/MWh** (or ¢/kWh). It's the "**price per mile**" of a power plant — the honest apples-to-apples
+
+::: notes
+Keep the formula intuitive: total money in over the plant's life, divided by total energy
+out. Real LCOE also discounts future cash flows (time value of money) — mention it exists,
+don't compute it. Units: 1 MWh = 1,000 kWh; \$50/MWh = 5¢/kWh (about what you pay retail is
+higher because of the grid — next section). Source: NREL (LCOE explainer); Lazard method.
+:::
+
+## Worked example: one megawatt of solar
+
+- Build a **1 MW** solar farm: **\$1,000,000** up front, **20-year** life, ~**\$15k/yr** upkeep
+- Sun-and-weather mean it actually runs at ~**22%** of nameplate (its "**capacity factor**")
+- Energy over 20 yr: $1\,\text{MW} \times 8760\,\text{h} \times 0.22 \times 20 \approx 38{,}500\ \text{MWh}$
+- $$ \text{LCOE} = \frac{\$1{,}000{,}000 + \$300{,}000}{38{,}500\ \text{MWh}} \approx \$34/\text{MWh} $$
+- **This is a real, defensible calculation** — and it's right in the range the pros publish (next slide)
+
+::: notes
+Re-checked this session: annual MWh = 1×8760×0.22 = 1,927; ×20 = 38,544 MWh; O&M
+15k×20 = \$300k; (1,000,000+300,000)/38,544 ≈ \$33.7/MWh. Numbers are illustrative but
+realistic (capital ~\$1/W is a reasonable 2025 utility-solar figure). This is the kind of
+"simple calculation" the course promises — walk it slowly, it's very defensible in Q&A.
+Capacity factor is the honest asterisk on every renewable. Source: NREL ATB (method);
+Lazard 2025.
+:::
+
+## Lazard 2025: what's actually cheapest (unsubsidized)
+
+| Source | LCOE (\$/MWh) | Notes |
+|--------|:------------:|-------|
+| **Onshore wind** | **37 – 86** | cheapest new build |
+| **Utility solar** | **38 – 217** | also cheapest at the low end |
+| Combined-cycle gas | 48 – 109 | the fossil workhorse |
+| Coal | 71 – 173 | dirty *and* not cheap |
+| Battery storage (2-hr) | 81 – 174 | the intermittency patch |
+| Nuclear | 141 – 220 | safe, low-carbon, **expensive to build** |
+| Gas peaker | 149 – 251 | only for demand spikes |
+
+- **New wind and solar are the cheapest electricity humans have ever built** — even before subsidies
+
+*Source: Lazard, LCOE+ (June 2025), unsubsidized ranges.*
+
+::: notes
+Lazard 2025 unsubsidized (converted from their \$/kWh): onshore wind \$37–86, utility solar
+\$38–217, CC gas \$48–109, coal \$71–173, standalone 2-hr battery \$81–174, nuclear \$141–220,
+gas peaker \$149–251. Note Lazard flags wind rose YoY (onshore +55%) and solar fell ~4%.
+Lazard's own caveat (important, next slide): excludes subsidies, carbon price, and grid/
+firming costs. Source: Lazard LCOE+ June 2025 (corroborated by pv-magazine, RTO Insider).
+:::
+
+## What LCOE quietly leaves out
+
+- **Intermittency:** the sun sets and the wind drops. A cheap solar MWh at noon isn't a cheap MWh at 9 pm — you need **storage or backup** (that's the battery row)
+- **Grid/firming costs:** Lazard's own numbers **exclude** the wires and balancing needed to make power *dependable*
+- **Externalities:** LCOE ignores the **death cost** and **carbon cost** we met in Lecture 1 — coal's cheap \$/MWh doesn't include the **people it kills**
+- **Takeaway:** LCOE is the best *starting* number and a **terrible ending** one. Cheapest on the spreadsheet ≠ cheapest in full
+
+::: notes
+This slide is the moral hinge that connects the physics half to the course's justice
+throughline. Callback to L1's "deaths per TWh" (Our World in Data / Markandya & Wilkinson
+2007, Lancet) and the climate cost (IPCC AR6). Firming/intermittency forward-refs to the
+grid section. The honest scientist's move: love the metric, know its blind spots.
+:::
+
+## LCOE — sources
+
+- Method: [NREL — Levelized Cost of Energy](https://www.nrel.gov/analysis/tech-lcoe.html); [NREL Annual Technology Baseline](https://atb.nrel.gov/)
+- 2025 figures: [Lazard — LCOE+ (June 2025)](https://www.lazard.com/research-insights/levelized-cost-of-energyplus-lcoeplus/); [Lazard 2025 press release](https://www.lazard.com/news-announcements/lazard-releases-2025-levelized-cost-of-energyplus-report-pr/)
+- Independent write-ups: [pv magazine — solar/wind still cheapest](https://pv-magazine-usa.com/2025/06/17/despite-low-gas-prices-solar-wind-remain-cheapest-sources-of-power-in-u-s/); [RTO Insider](https://www.rtoinsider.com/108308-lazard-solar-wind-retain-lowest-lcoes/)
+- Externalities (callback): [Our World in Data — deaths per TWh](https://ourworldindata.org/grapher/death-rates-from-energy-production-per-twh); [IPCC AR6 Synthesis](https://www.ipcc.ch/report/ar6/syr/)
+
+# The grid: getting it to your wall
+
+## From the plant to your phone charger
+
+- Electricity is made in a few big places and used in **millions** of small ones. The **grid** is the machinery in between
+- Three stages: **generation** (the plant) → **transmission** (the tall steel towers, very high voltage) → **distribution** (the wooden poles on your street, stepped back down)
+- It is arguably the **largest machine ever built** — a continent wired into one synchronized system
+
+![High-voltage transmission towers — the grid moves power at high voltage to cut resistive losses. Photo by Nixdorf, CC BY-SA 3.0.](images/transmission_towers.jpg){height="340"}
+
+::: notes
+Generation → transmission → distribution is the mental model to leave them with. The North
+American grid is genuinely one of the largest engineered systems in existence. Source:
+Britannica (electric power system); IEEE overview. Keep the "largest machine" line — it's
+accurate and it lands.
+:::
+
+## Why the towers run at insane voltage
+
+- Push current through a wire and some power is **lost as heat** — losses scale with **current squared** ($P_{\text{loss}} = I^2 R$)
+- Trick: send the *same power* at **high voltage and low current** → far less loss. Then **step it back down** near you
+- The device that does this — the **transformer** — **only works with AC**
+- **Callback:** *this* is why **AC beat DC** in Lecture 1's Current Wars. Edison's DC couldn't do this cheaply; Tesla/Westinghouse's AC could
+
+::: notes
+$P_{loss}=I^2R$ is the whole reason for high-voltage transmission and the deep reason AC
+won (transformers need changing flux — Faraday again — so they need AC). This is a
+beautiful callback that ties the E&M section, the Current Wars (L1), and the grid together.
+US transmission runs 100–765 kV; homes get 120/240 V. Source: HyperPhysics; Britannica
+(transformer); US-Canada Task Force report background.
+:::
+
+## The grid is a tightrope walk — every second
+
+- You **can't store much electricity in the grid** — supply must match demand **instant to instant**
+- The proof is the **frequency**: North America runs at **60 Hz**, and it must stay there. Too much demand → it sags; too much supply → it climbs
+- Grid operators (here, the **NYISO**) rebalance **second by second**, all day, forever
+- Lose the balance and the system **protects itself by shutting down** — which is how a small fault becomes a **blackout**
+
+::: notes
+60 Hz is the US/Canada standard (50 Hz most of the rest of the world). Frequency is the
+real-time tell of supply-vs-demand — generators literally spin at a rate that sets it.
+NYISO runs New York's grid (good local hook). This sets up the 2003 blackout perfectly.
+Source: NYISO (how the grid works); NERC frequency standards; Britannica.
+:::
+
+## Aug 14, 2003: the day the Northeast went dark
+
+- It started small: an **Ohio utility's software failed** and some **overgrown trees** touched power lines near Cleveland
+- With operators flying blind, the imbalance **cascaded across the grid in minutes**
+- **~50 million people** across **eight US states and Ontario** lost power — including **right here in Buffalo and Western New York**
+- One overgrown tree + one software bug → a subcontinent dark. **That's how tightly coupled the grid is**
+
+>>> SUGGESTED GRAPHIC (optional, manifest): the DMSP/NOAA before-and-after satellite night
+image of the Northeast blackout (federal/PD — corroborate). Alt: "Satellite night images of
+the northeastern United States before and during the August 2003 blackout, showing the
+region gone dark." (If license is unclear, the script will flag it — fine to omit.)
+
+::: notes
+Primary source: U.S.–Canada Power System Outage Task Force, Final Report (2004) — this is
+federal, so per the source-integrity rule pair it with an independent account (Scientific
+American 5-years-later; Wikipedia as finding aid → its cited sources). Trigger: FirstEnergy
+(Ohio) — a software race condition in the alarm system + unmanaged vegetation contact →
+cascade. Buffalo/WNY were squarely in the blackout zone (good local hook). Deaths estimated
+~90+ (indirect). Keep the "coupled system" lesson.
+:::
+
+## Keeping the lights on (and the hard part ahead)
+
+- The grid is always juggling: **baseload** (steady — nuclear, some gas), **peakers** (fast spikes), and increasingly **wind, solar, and batteries**
+- Renewables are the **cheapest** energy (LCOE) but **variable** — so the 21st-century grid problem is **timing and storage**, not generation cost
+- **Batteries, long-distance transmission, and demand shifting** are how we square cheap-but-intermittent with a grid that must balance every second
+- **Relevant later (Week 7):** all those **AI data centers** are enormous new demand landing on this same tightrope
+
+::: notes
+Synthesizes the whole lecture: physics (how we generate) + LCOE (what it costs) + grid
+(delivering it reliably). The honest frontier is storage/timing, not raw cost. Forward-ref
+to Week 7 (AI/data-center demand) and Week 8 (future energy needs). Source: IEA (grids and
+storage); NYISO. End on the real 21st-century challenge.
+:::
+
+## The grid — sources
+
+- Grid basics: [Britannica — electric power system](https://www.britannica.com/technology/electric-power); [HyperPhysics — transformers & transmission](http://hyperphysics.phy-astr.gsu.edu/hbase/magnetic/transf.html)
+- Operations / frequency: [NYISO — how the grid works](https://www.nyiso.com/how-the-grid-works); NERC frequency standards
+- 2003 blackout: [U.S.–Canada Power System Outage Task Force Final Report](https://www.energy.gov/oe/articles/blackout-2003-us-canada-task-force-presents-final-report-onblackout-august-2003) *(federal — corroborate)*; [Scientific American — five years later](https://www.scientificamerican.com/article/2003-blackout-five-years-later/)
+- Storage/future grid: [IEA — Electricity Grids and Secure Energy Transitions](https://www.iea.org/reports/electricity-grids-and-secure-energy-transitions)
+
+# How this deck was built
+
+## AI-use disclosure (per our own policy)
+
+- **Model / company:** Claude (Anthropic)
+- **What it drew from:** the **primary sources on every Sources slide** — I verified each one and did the physics/finance myself
+- **Where:** Anthropic compute runs on major U.S. cloud regions *(exact region confirmed at build)*
+- **Compute / tokens:** **≈ 0.9 million tokens** (estimate) to research, calculate, and draft this quarry
+- **Energy / water (order-of-magnitude):** **≈ 0.15–0.4 kWh** and **≈ 0.05–0.8 L** — a range on purpose; providers report differently
+- The human (me) checked every number and source. **That's the standard I'll hold you to in your final project.**
+
+::: notes
+This is the same capstone move as Lecture 1 — model the disclosure the syllabus requires.
+Swap in the exact token count from this session's usage log if you want a firm number.
+Method/uncertainty same as L1: ~0.15–0.45 Wh per 1,000 tokens; water ~0.3–1.8 mL/Wh.
+The point is the honesty and the range, not false precision. Sources: Google 2025
+environmental disclosures; Li et al. "Making AI Less Thirsty"; IEA "Energy and AI."
+:::
+
+## Takeaway: one machine, one ledger, one tightrope
+
+- **The physics:** almost all electricity is one trick — *change a magnetic field, make a current* (Faraday). Nuclear just unlocks more of $E=mc^2$
+- **The cost:** LCOE makes wind and solar the cheapest ever — but the number hides intermittency and the human/climate bill
+- **The delivery:** the grid must balance every second; cheap-but-variable power makes that the century's real challenge
+- **Skill:** take notes you can be **quizzed from** — then quiz yourself
+
+::: notes
+Warm, tight close. This is the "one thing to remember" slide — the through-line from
+generation (physics) to cost (LCOE) to delivery (grid), with the skill of the week folded
+in. Then take questions.
+:::
+
+# Watch this week (optional)
+
+<!--
+====================================================================
+SOCIAL-MEDIA / SHORT-FORM SUGGESTIONS (bonus material for Sal to mine).
+Prioritizes the project's VETTED creators; a couple of well-established
+non-vetted channels are included and clearly marked "(secondary)".
+Handles/links are as confirmed this session — the course rule still
+applies: RE-CONFIRM the exact reel/video URL right before class, since
+short-form links rot. Personal-tie hooks (per project style notes) are
+flagged so you can lean into "a friend of mine…" / "I work on CMS…".
+
+Honest coverage gaps: the vetted list is a physics/AI/math roster, so it
+covers E&M and the atom well, the grid only loosely (via Veritasium), and
+does NOT cover LCOE/energy-economics or note-taking at all. Those gaps are
+noted below — candidates to add to the trusted list as the course grows.
+====================================================================
+-->
+
+## Physics on your feed: fields & Maxwell
+
+- **[3Blue1Brown](https://www.youtube.com/watch?v=rB83DpBJQsE)** — *"Divergence and curl: the language of Maxwell's equations."* The best visual intuition for the E&M we did today (Grant Sanderson; **vetted**)
+- **[Elle Cordova](https://www.youtube.com/@ElleCordova)** — her *"Fundamental Forces of Physics"* bits personify **electromagnetism** as a character. Funny, and it sticks (**vetted**)
+- **[learnwithsherlock](https://www.instagram.com/learnwithsherlock/)** — short, clean physics explainers, incl. electromagnetism (**vetted**; IG/TikTok)
+
+::: notes
+Confirmed this session (RE-VERIFY exact links at build): 3Blue1Brown "Divergence and curl"
+= youtube.com/watch?v=rB83DpBJQsE (also 3blue1brown.com/lessons/divergence-and-curl); his
+neural-network series is the one to save for the Week-7 AI lecture. Elle Cordova = @ellecordova
+(youtube.com/@ElleCordova; also IG/TikTok) — "Fundamental Forces" reels; pick the electromagnetism
+one and confirm the exact reel URL. learnwithsherlock = instagram.com/learnwithsherlock +
+tiktok.com/@learnwithsherlock. All three are on the project's trusted list.
+:::
+
+## The atom: fission, fusion, and CERN
+
+- **[Dr. Clara Nellist — @particleclara](https://www.instagram.com/particleclara/)** — real CERN particle physicist doing first-year-friendly explainers. **She's a friend of mine** — lean in (**vetted**; IG/TikTok/[YouTube](https://www.youtube.com/@ParticleClara))
+- **[CERN](https://home.cern/)** (official, **vetted**) — the source for "what a lab actually does." *Reminder: I work on **CMS**, one of the big LHC experiments — ask me anything*
+- **Brian Cox** — *"Can We Make a Star on Earth?"* (BBC) on **fusion** and how stars burn. A trusted traditional communicator (**vetted**) — *I've worked with him*
+- **[Kurzgesagt — "Fusion Power Explained: Future or Failure"](https://www.youtube.com/watch?v=mZsaaturR6E)** *(secondary)* — great animation; pairs with our "real, but decades away" verdict
+
+::: notes
+Authenticity hooks (project style note): particleclara (Clara Nellist) is a personal friend —
+"a friend of mine makes these"; and I'm a CMS experimentalist, so CERN/CMS content I can speak
+to firsthand. Confirmed: particleclara = instagram.com/particleclara, tiktok.com/@particleclara,
+youtube.com/@ParticleClara. CERN official = home.cern (@CERN across platforms). Brian Cox fusion:
+BBC Horizon "Can We Make a Star on Earth?" (2009) + "Wonders of the Universe" stellar-fusion segments
+— pick a clip and verify. Kurzgesagt fusion = youtube.com/watch?v=mZsaaturR6E (same video referenced
+in Lecture 1; NOT on the vetted list — established and reliable, mark as secondary).
+:::
+
+## The grid: how electricity *actually* travels
+
+- **[Veritasium — "The Big Misconception About Electricity"](https://www.youtube.com/watch?v=bHIhgxav9LY)** *(secondary)* — energy rides in the **fields around** the wires, not "through" them. A mind-bending pairing with our transmission/grid slides
+- Follow-up (*same channel, secondary*): *"How Electricity Actually Works"* answers the pushback on the first video
+- **Honest gap:** our **vetted** list is a physics/AI/math roster — it doesn't yet cover **LCOE / energy economics** or **note-taking**. If you find a good creator for those, add them to the trusted list
+
+::: notes
+Veritasium "The Big Misconception About Electricity" = youtube.com/watch?v=bHIhgxav9LY (2021);
+the follow-up "How Electricity Actually Works" answers critics — both are strong on the Poynting-
+vector idea that ties directly to our high-voltage/transmission slide. Veritasium is NOT on the
+vetted list (mark secondary), but Lecture 1 already leaned on it, so it's consistent. Real gaps to
+flag for the trusted-creator list as it grows: LCOE/energy-economics and study-skills/note-taking —
+no vetted creator covers these yet. Candidate energy-explainer channels exist but need your vetting
+before they go on the list. Per course policy, cite any creator's underlying primary sources if this
+material makes it into a graded deliverable. (The next section broadens the net to fill these gaps.)
+:::
+
+# Cast a wider net: creators to vet
+
+<!--
+====================================================================
+NON-VETTED CREATORS — a wider search to fill the gaps, ESPECIALLY
+LCOE / energy economics (Sal's request). NONE of these are on the
+project's trusted-creator list yet: they are candidates for you to
+VET before relying on them or naming them to students. Handles/links
+confirmed this session; still re-check exact video URLs at build.
+Rigor/point-of-view flags are in the speaker notes so you can present
+them evenhandedly (several lean pro-renewable — noted where relevant).
+Per course policy, trace any creator's claims to PRIMARY sources for
+graded use.
+====================================================================
+-->
+
+## Energy economics & LCOE (filling the gap)
+
+- **[Engineering with Rosie](https://www.youtube.com/watch?v=i-891blV02c)** — engineer Rosemary Barnes; her video *"Does LCOE give us the right numbers?"* is a near-perfect match for today's cost section
+- **[Our World in Data](https://ourworldindata.org/energy)** — the data source behind our LCOE/deaths-per-TWh figures; charts you can actually cite
+- **[Volts — David Roberts](https://www.volts.wtf/)** — deep energy-economics & policy (podcast/newsletter; more advanced)
+- **[Just Have a Think](https://www.youtube.com/@JustHaveaThink)** & **[Undecided w/ Matt Ferrell](https://www.youtube.com/@UndecidedTechnology)** — energy-transition explainers with sources
+- **[Ziroth](https://www.youtube.com/c/ZirothTech)** — clean energy-data visualizations
+
+*None vetted yet — candidates for the trusted list. They point where the cost and climate data point; vet each for rigor and primary sourcing, and watch for hype (over-optimistic timelines), not for "balance."*
+
+::: notes
+Confirmed this session (RE-VERIFY links at build): Engineering with Rosie (Rosemary Barnes, wind/
+composites engineer) — LCOE video = youtube.com/watch?v=i-891blV02c; channel youtube.com/@EngineeringwithRosie.
+Our World in Data = ourworldindata.org/energy + youtube.com/@ourworldindata3652 — this is the actual
+data behind our Lazard-adjacent figures and the L1 deaths-per-TWh chart; strongest for "cite the data."
+Volts = volts.wtf (David Roberts) — excellent on electricity-market economics but adult/advanced and
+opinionated (clean-energy advocate — flag POV). Just Have a Think = Dave Borlace, youtube.com/@JustHaveaThink
+(rigorous, cites sources). Undecided = Matt Ferrell, youtube.com/@UndecidedTechnology (tech + payback-
+period economics). Ziroth = Ryan Hughes, youtube.com/c/ZirothTech (data viz). ON "BALANCE": this set leans pro-
+renewable because that's where the LCOE numbers and the climate science actually land — that's the
+evidence, not a bias to offset, and there's no reason to manufacture fossil-fuel equal time on a
+settled empirical question. The real scrutiny is per-creator rigor: do their claims trace to primary
+data, and are they overselling (hyped timelines, tech that isn't deployed yet)? All NON-VETTED —
+your review needed on that basis.
+:::
+
+## Grids, reactors & how things really work
+
+- **[Practical Engineering — Grady Hillhouse](https://practical.engineering/blog/2019/6/24/how-does-the-power-grid-work)** — the gold standard on **the grid**: transmission, transformers, balancing, blackouts
+- **[Illinois EnergyProf — Prof. David Ruzic](https://www.youtube.com/@illinoisenergyprof6878)** — an actual nuclear/plasma professor on **fission & fusion**; energetic and rigorous
+- **[Real Engineering](https://www.youtube.com/@RealEngineering)** — well-produced deep dives (e.g., *"The Problem with Nuclear Fusion"*)
+- **[Steve Mould](https://www.youtube.com/@SteveMould)** — hands-on **electromagnetism/induction** demos you can almost feel
+
+::: notes
+Practical Engineering (Grady Hillhouse, licensed PE) = practical.engineering + youtube.com/@PracticalEngineering;
+"How Does the Power Grid Work?" is the single best grid explainer and maps straight onto our grid slides —
+strong candidate to formally vet/add. Illinois EnergyProf (Prof. David Ruzic, UIUC Nuclear/Plasma/Radiological
+Eng) = youtube.com/@illinoisenergyprof6878 — credentialed, great on reactors and fusion plasma. Real
+Engineering = youtube.com/@RealEngineering (Brian McManus) — polished, generally reliable; verify specifics.
+Steve Mould = youtube.com/@SteveMould — physics demos incl. induction/eddy currents, pairs with the E&M
+section. All NON-VETTED; Practical Engineering + Illinois EnergyProf are the two I'd prioritize for review.
+:::
+
+## Study skills: note-taking
+
+- **[Justin Sung](https://www.youtube.com/@JustinSung)** — former doctor turned learning-science coach; evidence-based note-taking (mapping over transcribing) that lines up with today's skill
+- **[Benjamin Keep](https://www.youtube.com/@BenjaminKeep)** — learning-science explainers on retrieval, spacing, and note strategies
+- Ties directly to our Cornell-method / "process, don't transcribe" slides — good optional follow-up for the Week-3 note-taking quiz
+
+*Non-vetted — review before recommending; both cite the cognitive-science literature.*
+
+::: notes
+Justin Sung = youtube.com/@JustinSung (learning-science coach; leans into his iCanStudy course — flag the
+soft sales angle, but the content aligns with Dunlosky/retrieval-practice evidence). Benjamin Keep =
+youtube.com/@BenjaminKeep (PhD; learning science, careful with evidence). Both fill the note-taking gap the
+prior slide flagged. NON-VETTED. Reminder: our vetted list had no study-skills creators — if you like either,
+that's a natural addition. As always, the real check on any of this is whether students can defend it in Q&A.
+:::

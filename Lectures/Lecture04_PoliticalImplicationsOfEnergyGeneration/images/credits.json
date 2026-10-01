@@ -1,0 +1,97 @@
+[
+  {
+    "file": "fission_chain_reaction.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fission_chain_reaction.svg",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "User:Fastfission — Public domain. Source: https://commons.wikimedia.org/wiki/File:Fission_chain_reaction.svg",
+    "alt": "Diagram of a self-sustaining nuclear fission chain reaction: a neutron splits a U-235 nucleus, releasing more neutrons that go on to split further U-235 nuclei.",
+    "caption": "A U-235 fission chain reaction. Public domain (U.S. government work, MC Perez / Nuclear Regulatory Commission). [Verify title in discovery mode if not found.]",
+    "note": "For Slide 4 (U-235 Reaction). Alternative if unavailable: File:Nuclear fission chain reaction.svg.",
+    "mime": "image/svg+xml",
+    "free": true,
+    "alt_file_description": "Schematic diagram of a fission chain reaction. Based roughly on the illustration in the Smyth Report (1945). Caption A uranium-235 atom absorbs a neutron, and fissions into two new atoms (fission fragments), releasing three new neutrons and some binding energy. One of those neutrons is absorbed by an atom of uranium-238, and does not continue the reaction. Another neutron is simply lost and does not collide with anything, also not continuing the reaction. However one neutron does collide with an atom of uranium-235, which then fissions and releases two neutrons and some binding energy. Both of those neutrons collide with uranium-235 atoms, each of which fission and release between one and three neutrons, and so on. Created in Adobe Illustrator .",
+    "alt_sd_caption": "Fission Reaction.",
+    "alt_article": []
+  },
+  {
+    "file": "plutonium_ring.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Plutonium_ring.jpg",
+    "license": "Attribution",
+    "license_url": "",
+    "attribution": "Los Alamos National Laboratory — Attribution. Source: https://commons.wikimedia.org/wiki/File:Plutonium_ring.jpg",
+    "alt": "Photograph of a small ring of plutonium metal glowing faintly orange from its own radioactive decay heat.",
+    "caption": "A ring of weapons-grade plutonium-239, glowing from its own decay heat. Public domain (U.S. Department of Energy). [Verify title in discovery mode if not found.]",
+    "note": "For Slide 5 (U-238 to Pu-239 Reaction) — illustrative sample photo, matching the style of the U-238 bar photo already on Slide 3.",
+    "mime": "image/jpeg",
+    "free": false,
+    "alt_file_description": "A weapons-grade ring of electrorefined plutonium, typical of the rings refined at Los Alamos and sent to Rocky Flats for fabrication. The ring has a purity of 99.96%, weighs 5.3 kg, and is approx 11 cm in diameter. It is enough plutonium for one bomb core. The ring shape helps with criticality safety (less concentrated material).",
+    "alt_sd_caption": "A weapons-grade ring of electrorefined plutonium",
+    "alt_article": [
+      {
+        "article": "Weapons-grade nuclear material",
+        "alt": "A weapons-grade ring of electrorefined plutonium, typical of the rings refined at Los Alamos and sent to Rocky Flats for fabrication. The ring has a purity of 99.96%, weighs 5.3 kg, and is approx 11 cm in diameter. It is enough plutonium for one bomb core. The ring shape helps with criticality safety (less concentrated material)."
+      }
+    ]
+  },
+  {
+    "file": "zippe_centrifuge.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Zippe-type_gas_centrifuge.svg",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Public domain. Source: https://commons.wikimedia.org/wiki/File:Zippe-type_gas_centrifuge.svg",
+    "alt": "Cutaway diagram of a Zippe-type gas centrifuge showing heavier U-238 (dark blue) concentrating at the outer wall and lighter U-235 (light blue) concentrating near the central axis as the cylinder spins.",
+    "caption": "How a gas centrifuge enriches uranium. Public domain, released by the author (Fastfission), commons.wikimedia.org/wiki/File:Zippe-type_gas_centrifuge.svg.",
+    "note": "For Slide 6 (Enriching Uranium). Confirmed public domain — released into the public domain by the author, no further check needed.",
+    "mime": "image/svg+xml",
+    "free": true,
+    "alt_file_description": "",
+    "alt_sd_caption": "",
+    "alt_article": []
+  },
+  {
+    "file": "pwr_diagram.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pressurized_Water_Reactor_01.svg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "Σ64 — CC BY 4.0. Source: https://commons.wikimedia.org/wiki/File:Pressurized_Water_Reactor_01.svg",
+    "alt": "Schematic diagram of a pressurized-water reactor, showing the pressurized primary coolant loop through the reactor core and steam generator, and the separate secondary steam loop driving the turbine.",
+    "caption": "Pressurized-water reactor (PWR) schematic — the most common reactor type worldwide. [Verify title in discovery mode if not found.]",
+    "note": "For Slide 7 (Types of fission reactors), representing PWR (~74% of world reactors). Alternative: File:PWR nuclear power plant diagram.svg.",
+    "mime": "image/svg+xml",
+    "free": true,
+    "alt_file_description": "Illustration of Pressurized Water Reactor(Simple diagram)",
+    "alt_sd_caption": "",
+    "alt_article": []
+  },
+  {
+    "file": "fast_breeder_diagram.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fast_Breeder_Reactor_diagram.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "thomick — CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Fast_Breeder_Reactor_diagram.jpg",
+    "alt": "Diagram of a fast breeder reactor, showing the reactor core surrounded by a fertile U-238 blanket and liquid-metal (sodium) coolant loops.",
+    "caption": "Fast breeder reactor schematic — converts U-238 into Pu-239 faster than it consumes fissile fuel. [Verify title in discovery mode if not found.]",
+    "note": "For Slide 7 (Types of fission reactors), representing the breeder-reactor bullet specifically requested. Verify license before use — if non-free, fall back to File:DFR reactor schematic.png (Dounreay Fast Reactor, likely UK government / OGL) found via search.",
+    "mime": "image/jpeg",
+    "free": true,
+    "alt_file_description": "Fast Breeder Reactor",
+    "alt_sd_caption": "",
+    "alt_article": []
+  },
+  {
+    "file": "molten_salt_reactor.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Molten_Salt_Reactor.svg",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "US Department of Energy Nuclear Energy Research Advisory Committee — Public domain. Source: https://commons.wikimedia.org/wiki/File:Molten_Salt_Reactor.svg",
+    "alt": "Schematic diagram of a molten-salt reactor, showing fuel dissolved in liquid salt circulating between the reactor core and a heat exchanger, with a freeze-plug drain tank below the core.",
+    "caption": "Generation IV molten-salt reactor (MSR) design. [Verify title in discovery mode if not found.]",
+    "note": "For Slide 29 (Gen 4 Reactors), specifically illustrating the molten-salt design the professor asked to cover.",
+    "mime": "image/svg+xml",
+    "free": true,
+    "alt_file_description": "Diagram extracted from Generation IV roadmap published by US Department of Energy and cleaned up to remove excess grouping.",
+    "alt_sd_caption": "",
+    "alt_article": []
+  }
+]

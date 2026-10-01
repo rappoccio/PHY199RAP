@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Obsidian vault config
+.obsidian/
+
+# Quarto internal build artifact
+_quarto_internal_scss_error.scss
+
+# Grades / rosters (student PII, FERPA) - never track
+Grading/
+Assignments/*Classlist_Export*.csv
+Assignments/*GradesExport*.xlsx
+
+# Editor/Office lock files
+~$*
+
+# Python bytecode cache
+__pycache__/
+*.pyc

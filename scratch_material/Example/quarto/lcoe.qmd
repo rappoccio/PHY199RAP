@@ -1,0 +1,54 @@
+---
+title: "The Levelized Cost of Energy"
+subtitle: "Comparing how much a kilowatt-hour *really* costs"
+author: "PHY199-RAP · Energy in the 21st Century"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    math: katex
+  pptx: default
+---
+
+## What is LCOE?
+
+The **levelized cost of energy** is the average price per unit of electricity
+that pays back *all* lifetime costs of a plant.
+
+$$
+\text{LCOE} = \frac{\text{lifetime costs}}{\text{lifetime energy produced}}
+$$
+
+It lets us compare a solar farm, a gas plant, and a reactor on the **same
+footing** — dollars per megawatt-hour.
+
+## A simple calculation
+
+A solar farm costs **\$1,000,000** to build, runs **25 years**, and makes
+**2,500 MWh per year**.
+
+$$
+\text{LCOE} = \frac{\$1{,}000{,}000}{25 \times 2{,}500\ \text{MWh}} = \$16\,/\text{MWh}
+$$
+
+*(Real estimates add fuel, maintenance, and a discount rate — but the idea is
+the same.)*
+
+## Rough LCOE by source
+
+| Source        | Typical LCOE ($/MWh) |
+|---------------|:--------------------:|
+| Utility solar |        30 – 40       |
+| Onshore wind  |        25 – 50       |
+| Natural gas   |        45 – 75       |
+| Nuclear       |        55 – 90       |
+| Coal          |        65 – 150      |
+
+Cheapest on paper isn't the whole story — **land, waste, and human cost** don't
+appear here.
+
+## Takeaway
+
+LCOE is a powerful *first* comparison —
+
+but a fair energy choice weighs the costs it **leaves out**.

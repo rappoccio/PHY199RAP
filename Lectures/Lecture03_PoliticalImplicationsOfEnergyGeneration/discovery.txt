@@ -1,0 +1,553 @@
+
+############ Battle of Blair Mountain
+# Commons file search: 'Battle of Blair Mountain'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            594x376      File:Blair Mountain Fighting.jpg  [commons]
+yes     Public domain            1480x1592    File:Map of the movement of the union miners in Battle of Blair Mountain.png  [commons]
+yes     Public domain            1500x1316    File:Map of movement of federal troops and location of union and nonunion fighting during Blair Mountain Battle.png  [commons]
+yes     Public domain            1007x768     File:Blair-after-the-battle-4a.jpg  [commons]
+yes     Public domain            1015x748     File:Blair-after-the-battle-4.jpg  [commons]
+yes     Public domain            1024x747     File:Blair-after-the-battle-2.jpg  [commons]
+yes     Public domain            535x480      File:I'll give you until noon thursday to back to your home battle of blair mountain.jpg  [commons]
+yes     Public domain            639x473      File:Airfleet ordered to West Virginia Battlefield during the Blair Mountain fight 1921.png  [commons]
+yes     Public domain            1018x768     File:Blair-camped-at-blair-wv.jpg  [commons]
+yes     Public domain            1650x1030    File:West Virginia the same old line-up blair mountain 1921.png  [commons]
+yes     Public domain            981x768      File:Blair-machine-gun-nest 0.jpg  [commons]
+yes     Public domain            1008x768     File:Blair-miner.jpg  [commons]
+yes     Public domain            1024x749     File:Blair-machine-gun-nest-2 (2).jpg  [commons]
+yes     Public domain            490x360      File:YBAKGvOV6 k (3).webm  [commons]
+yes     Public domain            510x644      File:Miners with bomb.jpg  [commons]
+yes     CC BY 3.0                1920x1080    File:Solidarity Statue in Marmet, WV (Footage)-fe2cE5eORfg.webm  [commons]
+yes     Public domain            725x1170     File:Celebration of the battle of King's Mountain, October, 1855 (IA celebrationofbat00pres).pdf  [commons]
+yes     Public domain            856x1381     File:The battle of Point Pleasant; a battle of the revolution (IA battleofpointple00poff).pdf  [commons]
+yes     Public domain            664x937      File:History of Huntingdon and Blair counties, Pennsylvania (IA historyofhunting00afri).pdf  [commons]
+yes     Public domain            775x1252     File:Great battle of Chicamauga- a concise history of events from the evacuation of Chattanooga to the defeat of the enemy. Full details of the battle, incidents, & c (IA greatbattleofchi01reid).pdf  [commons]
+yes     Public domain            952x1372     File:The battle of Atlanta, and other campaigns, addresses, etc (IA battleofatlantaa00dodgiala).pdf  [commons]
+yes     Public domain            868x1356     File:The battle of Atlanta and other campaigns, addresses, etc (IA battleofatlanta00dodgrich).pdf  [commons]
+yes     Public domain            775x1287     File:Privileges of the House of Representatives, Battle of Ball's Bluff - speech of Hon. Roscoe Conkling of New York, delivered in the House of Representatives, January 6, 1862 (IA privilegesofhous00conk).pdf  [commons]
+yes     Public domain            808x1318     File:The Blair family of New England (IA blairfamilyofnew00leav 0).pdf  [commons]
+yes     Public domain            752x1287     File:The poetical works of Beattie, Blair and Falconer; (IA poeticalworksofb00beat).pdf  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ West Virginia mine wars miners 1921
+# Commons file search: 'West Virginia mine wars miners 1921'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            814x1175     File:Civil war in West Virginia (IA civilwarinwestvi00lanerich).pdf  [commons]
+yes     Public domain            602x975      File:Civil war in West Virginia; a story of the industrial conflict in coal mines (IA cu31924002217226).pdf  [commons]
+yes     Public domain            954x1402     File:West Virginia Medical Journal (IA westvirginiamedi1619west).pdf  [commons]
+yes     Public domain            1093x1556    File:History of West Virginia, old and new, in one volume, and West Virginia biography, in two additional volumes (IA historyofwestvir01call).pdf  [commons]
+yes     Public domain            2190x3115    File:History of West Virginia, old and new, in one volume, and West Virginia biography, in two additional volumes (v.1).djvu  [commons]
+yes     Public domain            800x1154     File:Civil war in West Virginia (IA civilwarinwestvi00lane).pdf  [commons]
+yes     Public domain            802x1168     File:Civil war in West Virginia (IA civilwarinwestv00lane).pdf  [commons]
+yes     Public domain            2039x3147    File:History of West Virginia, old and new, in one volume, and West Virginia biography, in two additional volumes (v.2).djvu  [commons]
+yes     Public domain            764x1179     File:History of West Virginia, old and new, in one volume, and West Virginia biography, in two additional volumes (IA historyofwestvir02call).pdf  [commons]
+yes     Public domain            2231x3141    File:East Oregonian-October 05, 1921.pdf  [commons]
+yes     Public domain            2195x2610    File:Victoria Daily Times (1921-05-13) (IA victoriadailytimes19210513).pdf  [commons]
+yes     Public domain            2195x2627    File:Victoria Daily Times (1921-03-31) (IA victoriadailytimes19210331).pdf  [commons]
+yes     Public domain            2227x2627    File:Victoria Daily Times (1921-09-10) (IA victoriadailytimes19210910).pdf  [commons]
+yes     Public domain            802x1279     File:The coal miners' insecurity; facts about irregularity of employment in the bituminous coal industry in the United States (IA cu31924001223282).pdf  [commons]
+yes     Public domain            2235x2627    File:Victoria Daily Times (1921-09-30) (IA victoriadailytimes19210930).pdf  [commons]
+yes     Public domain            2210x2635    File:Victoria Daily Times (1921-11-07) (IA victoriadailytimes19211107).pdf  [commons]
+yes     Public domain            2235x2618    File:Victoria Daily Times (1921-11-02) (IA victoriadailytimes19211102).pdf  [commons]
+yes     Public domain            2218x2643    File:Victoria Daily Times (1921-05-16) (IA victoriadailytimes19210516).pdf  [commons]
+yes     Public domain            2235x2618    File:Victoria Daily Times (1921-08-25) (IA victoriadailytimes19210825).pdf  [commons]
+yes     Public domain            2235x2635    File:Victoria Daily Times (1921-06-28) (IA victoriadailytimes19210628).pdf  [commons]
+yes     Public domain            2218x2610    File:Victoria Daily Times (1921-11-08) (IA victoriadailytimes19211108).pdf  [commons]
+yes     Public domain            2218x2610    File:Victoria Daily Times (1921-06-18) (IA victoriadailytimes19210618).pdf  [commons]
+yes     Public domain            2202x2618    File:Victoria Daily Times (1921-05-14) (IA victoriadailytimes19210514).pdf  [commons]
+yes     Public domain            1439x1950    File:The Billboard 1921-06-18- Vol 33 Iss 25 (IA sim billboard 1921-06-18 33 25).pdf  [commons]
+yes     Public domain            1262x1702    File:Editor and Publisher 1921-07-09- Vol 54 Iss 6 (IA sim editor-publisher 1921-07-09 54 6).pdf  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Sid Hatfield
+# Commons file search: 'Sid Hatfield'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            1124x1697    File:Sid Hatfield c1920.jpg  [commons]
+yes     Public domain            858x1347     File:News clipping scrapbook, 1888-1922, about people from Hatfield (IA newsclippingscra00raym).pdf  [commons]
+yes     Public domain            866x1468     File:An attempt to determine the exact character of Elizabethan architecture (IA attempttodetermi00hake).pdf  [commons]
+yes     Public domain            718x977      File:German lyrics and ballads, with a few epigrammatic poems (IA cu31924012933523).pdf  [commons]
+yes     Public domain            1275x1650    File:WHSF- Returned, 38-2 - DPLA - ec7681e39151b73778d3468364e3b332.pdf  [commons]
+yes     Public domain            1654x1179    File:Tournament of Roses pictorial, 1924 (IA cp 000023).pdf  [commons]
+yes     Public domain            847x1377     File:The Burke and Alvord memorial. A genealogical account of the descendants of Richard Burke of Sudbury, Mass (IA burkealvordmemor1864bout).pdf  [commons]
+yes     Public domain            1029x1341    File:History of the state of New York (IA historyofstateof22brod).pdf  [commons]
+yes     Public domain            2300x3168    File:Our Town, Narberth, PA (November 10, 1923) (IA OurTownNarberthPA19231110).pdf  [commons]
+yes     Public domain            1760x2493    File:The Glendale News 1911-10-06 (IA cgl 000954).pdf  [commons]
+yes     Public domain            800x1293     File:A declaration of remarkable providences in the course of my life - by John Dane of Ipswich, 1682, to which is added a pedigree of the Dane family, and a few notes (IA declarationofrem00dane).pdf  [commons]
+yes     Public domain            1516x1956    File:Oregana 1963 optimized.pdf  [commons]
+yes     Public domain            691x1143     File:Pond. An almanack for...1695. ... 1695 (IA bim early-english-books-1641-1700 pond-an-almanack-for almanacs-pond-edward 1695).pdf  [commons]
+yes     Public domain            1112x1541    File:The English works of Roger Ascham .. (IA englishworksofro00asch).pdf  [commons]
+yes     Public domain            2325x3227    File:New-Dark Evangelist 1875-12-02- Vol 46 Iss 48 (IA sim evangelist-and-religious-review 1875-12-02 46 48).pdf  [commons]
+yes     Public domain            820x1343     File:A treatise on crimes and misdemeanors (IA cu31924021722214).pdf  [commons]
+yes     Public domain            1131x1445    File:Congressional Record January 25-October 21, 1988- Vol 134 Index (IA sim congressional-record-proceedings-and-debates january-25-october-21-1988 134 index 0).pdf  [commons]
+yes     Public domain            2258x3467    File:The London Gazette 19558.djvu  [commons]
+yes     Public domain            637x987      File:Trolley trips through New England .. (IA trolleytripsthro01hart).pdf  [commons]
+yes     Public domain            1275x1650    File:087 November 1-15 1972 - DPLA - d4d8526b0937e7e763c1296cbada22f8.pdf  [commons]
+yes     Public domain            1033x1443    File:The New England magazine (IA newenglandmagaziv19bost).pdf  [commons]
+yes     Public domain            1591x2435    File:An address to the public; shewing, the damage done to plowed lands by stripping them of stones, &c (IA b3036789x).pdf  [commons]
+yes     Public domain            1100x1504    File:Congressional Record January 3-November 18, 1983- Vol 129 Index (IA sim congressional-record-proceedings-and-debates january-3-november-18-1983 129 index).pdf  [commons]
+yes     Public domain            1435x1889    File:The Engineering and Mining Journal 1894-04-07- Vol 57 Iss 14 (IA sim engineering-and-mining-journal 1894-04-07 57 14).pdf  [commons]
+yes     Public domain            831x1339     File:Annual report - (Massachusetts Bay Transportation Authority) (IA annualreportmass1903mass).pdf  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Bill Blizzard
+# Commons file search: 'Bill Blizzard'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            984x1536     File:Bill Blizzard circa 1920s.jpg  [commons]
+yes     Public domain            596x815      File:Bill Blizzard (Cropped).jpg  [commons]
+yes     Public domain            1000x894     File:Blizzard, 'General' Bill.jpg  [commons]
+yes     Public domain            1275x1650    File:Wyden Letter to Activision-Blizzard on Hong Kong protest-related ban 20191018.pdf  [commons]
+yes     CC BY-SA 2.0             640x453      File:Incoming blizzard on the icy Tarmachan Ridge - geograph.org.uk - 86841.jpg  [commons]
+yes     Public domain            3656x2393    File:File-Ice cased Adelie penguins after a blizzard at Cape Denison.jpg  [commons]
+yes     CC BY-SA 2.0             723x421      File:T-6 Blizzard Reno 1989 (4478962183).jpg  [commons]
+yes     Public domain            1400x953     File:Blizzard pup.jpg  [commons]
+yes     Public domain            797x413      File:Snowfall totals with 1967 January blizzard.png  [commons]
+yes     Public domain            1400x1138    File:Blizzard at Cape Denison ~ Cape Denison, Antarctica, c. 1912. Frank Hurley. carbon print (6433918107).jpg  [commons]
+yes     Public domain            1421x1015    File:President Bill Clinton and Grand Forks Mayor Pat Owens.jpg  [commons]
+yes     Public domain            716x1016     File:"Buffalo Bill" from prairie to palace; an authentic history of the wild West, with sketches, stories of adventure, and anecdotes of "Buffalo Bill," the hero of the plains; (IA buffalobillfromp00burk).pdf  [commons]
+yes     Public domain            2550x3300    File:News- NRCS Offering More Flexiblity and Assistance for Blizzard Recovery (10562984126).jpg  [commons]
+yes     Public domain            922x1335     File:Blizzard Belt fruits and ornamentals - catalog, 1922 - the Gardner Nursery Co. (IA CAT31307435).pdf  [commons]
+yes     Public domain            712x1179     File:Hardy northern "blizzard belt" fruits, seeds and ornamentals - season 1922 - the Gardner Nursery Co. (IA CAT31307434).pdf  [commons]
+yes     Public domain            731x1162     File:An autobiography of Buffalo Bill (IA autobiographyofb00buffrich).pdf  [commons]
+yes     Public domain            6000x4857    File:Blizzard at Cape Denison ~ Cape Denison, Antarctica, c. 1912. Frank Hurley. carbon print - Flickr - State Library of New South Wales collection.jpg  [commons]
+yes     Public domain            704x1085     File:1931 catalogue of hardy "blizzard belt" new fruits, shade trees, shrubs, perennials and rock garden plants - Gardner Nursery Co. (IA CAT31335843).pdf  [commons]
+yes     Public domain            1047x1550    File:An autobiography of Buffalo Bill (Colonel W.F. Cody) (IA autobiographyofb00buff).pdf  [commons]
+yes     Public domain            1000x633     File:Leaders of the Union During the Armed March in West Virginia Southern Coal Fields.jpg  [commons]
+yes     Public domain            1540x1200    File:Blizzard2 - NOAA.jpg  [commons]
+yes     Public domain            725x1285     File:A treatise on fraudulent conveyances and creditors' bills (IA cu31924019326002).pdf  [commons]
+yes     CC BY-SA 4.0             4032x3024    File:Positive messaging on sign outside Hamlin Park School No. 74, Buffalo, New York - 20230203.jpg  [commons]
+yes     Public domain            1275x1650    File:MISCELLANEOUS LAND BILLS (IA gov.gpo.fdsys.CHRG-107shrg78597).pdf  [commons]
+yes     Public domain            845x1420     File:A treatise on fraudulent conveyances and creditors' bills - with a discussion of voidable acts (IA fraudulentconvey00wait).pdf  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Don Chafin
+# Commons file search: 'Don Chafin'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            700x1150     File:The anatomy of the human body (IA b30507923 0001).pdf  [commons]
+yes     Public domain            2208x3258    File:The Glendale Evening News 1918-09-07 (IA cgl 003562).pdf  [commons]
+yes     Public domain            2235x2627    File:Victoria Daily Times (1921-08-31) (IA victoriadailytimes19210831).pdf  [commons]
+yes     Public domain            637x1089     File:Four acting monologues (IA fouractingmonolo00came).pdf  [commons]
+yes     Public domain            900x1372     File:Annual report of the Department of Mines for the year ending ... (IA annualreportofde41west).pdf  [commons]
+yes     Public domain            806x1229     File:Genealogy of the descendants of James Breakenridge, who emigrated from Ireland, July, 1727 (IA genealogyofdescen00goul).pdf  [commons]
+yes     Public domain            562x991      File:Hamburgisches Magazin, oder gesammlete Schriften zum Unterricht und Vergnügen, aus der Naturforschung und den angenehmen Wissenschaften überhaupt. Des (IA dlibra.bibliotekaelblaska pl.01B04m.44954573).pdf  [commons]
+yes     Public domain            2583x3387    File:Glendale Daily Press 1921-09-03 (IA cgl 001606).pdf  [commons]
+yes     Public domain            1275x1712    File:Aqua Clara 1940.pdf  [commons]
+yes     Public domain            595x983      File:The weekly bulletin of new books added to the Boston Public Library (IA weeklybulletinof8919bost).pdf  [commons]
+yes     Public domain            756x1008     File:A book of fruits & flowers, shewing ... 1656 (IA bim early-english-books-1641-1700 a-book-of-fruits-flowe 1656).pdf  [commons]
+yes     Public domain            1285x1664    File:Documents about Martin Luther King, Jr., Executive Order 14176, 44-at-2386 hs1-852715321 156-04-part 3 of 4.pdf  [commons]
+yes     Public domain            852x1360     File:FEDLINK - United States Federal Collection (IA healthcarefraudw00unit).pdf  [commons]
+yes     Public domain            900x1322     File:A list of Lincolniana in the Library of Congress (IA listoflincolnian5136libr).pdf  [commons]
+yes     Public domain            2608x3393    File:The Glendale Evening News 1922-05-15 (IA cgl 004687).pdf  [commons]
+yes     Public domain            2566x3393    File:Glendale Daily Press 1921-09-02 (IA cgl 001605).pdf  [commons]
+yes     Public domain            1202x2093    File:Anno regni Caroli II. Regis ... 1679 (IA bim early-english-books-1641-1700 anno-regni-caroli-ii-re england-parliament 1679).pdf  [commons]
+yes     Public domain            533x897      File:Wiltshire (IA wiltshire00heat).pdf  [commons]
+yes     Public domain            2568x3302    File:Glendale Daily Press 1921-09-06 (IA cgl 001607).pdf  [commons]
+yes     Public domain            841x1320     File:The Greene family in England and America, with pedigrees (IA greenefamilyinen00bost).pdf  [commons]
+yes     Public domain            1179x1427    File:Leaves from a minister's portfolio (microform) (IA cihm 63406).pdf  [commons]
+yes     Public domain            881x1477     File:Catalogue of the concluding part of the extensive collection of prints formed by General Dowdeswell (IA catalogueofconcl1118evan).pdf  [commons]
+yes     Public domain            1041x1395    File:St. Nicholas (serial) (IA stnicholasserial172dodg).pdf  [commons]
+yes     Public domain            827x1314     File:Town of Westford annual report (IA townofwestfordan1908west).pdf  [commons]
+yes     Public domain            3195x4009    File:Ruffhead - The Statutes at Large - vol 8.djvu  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ coal scrip token
+# Commons file search: 'coal scrip token'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            399x400      File:Coal scrip from Killarney West Virginia.jpg  [commons]
+yes     CC BY-SA 3.0             407x427      File:Mullens WV coal scrip.jpg  [commons]
+yes     CC BY-SA 3.0             438x441      File:Thacker Mines WV coal scrip.jpg  [commons]
+yes     Public domain            1320x1812    File:Barter and scrip in the United States; selected references (IA barterscripinuni40unit).pdf  [commons]
+yes     Public domain            602x975      File:Civil war in West Virginia; a story of the industrial conflict in coal mines (IA cu31924002217226).pdf  [commons]
+yes     Public domain            1152x1768    File:Catalogue of a valuable and choice collection of American and foreign tokens ... (03-26-1860) (IA catalogueofvalua00leav).pdf  [commons]
+yes     Public domain            1460x2277    File:Catalogue of a valuable and choice collection of American and foreign tokens ... the remaining portion of the cabinet of Wm. Leggett Bramhall, Esq. ... (03-26-27-1860) (IA catalogueofvalua00leav 0).pdf  [commons]
+yes     Public domain            800x1154     File:Civil war in West Virginia (IA civilwarinwestvi00lane).pdf  [commons]
+yes     Public domain            802x1168     File:Civil war in West Virginia (IA civilwarinwestv00lane).pdf  [commons]
+yes     Public domain            814x1175     File:Civil war in West Virginia (IA civilwarinwestvi00lanerich).pdf  [commons]
+yes     Public domain            831x1429     File:Mining laws and laws relating to labor of the State of Kansas, 1893 (IA mininglawslawsre00kans).pdf  [commons]
+yes     Public domain            856x1291     File:Essays and Studies in honor of Margaret Barclay Wilson, teacher, physician, librarian, author (IA essaysstudiesinh00newyiala).pdf  [commons]
+yes     Public domain            804x1210     File:Essays and studies in honor of Margaret Barclay Wilson, teacher, physician, librarian, author (IA cu31924031767027).pdf  [commons]
+yes     Public domain            814x1341     File:A treatise of policy and religion. 1695 (IA bim early-english-books-1641-1700 a-treatise-of-policy-and fitzherbert-thomas 1695).pdf  [commons]
+yes     Public domain            616x1064     File:A brief testimony to the great duty of prayer- ... 1700 (IA bim early-english-books-1641-1700 a-brief-testimony-to-the tomkins-john 1700).pdf  [commons]
+yes     Public domain            793x1160     File:Things new and old; Old and New Testament studies (IA thingsnewoldoldn00scof).pdf  [commons]
+yes     Public domain            750x1275     File:The Plays of William Shakespeare (1778) - Vol. 3.pdf  [commons]
+yes     Public domain            2264x3281    File:The Glendale Evening News 1917-10-17 (IA cgl 003289).pdf  [commons]
+yes     Public domain            2789x3683    File:Sonoma Valley Expositor 1908-11-27 (IA casomvhs 000348).pdf  [commons]
+yes     Public domain            720x1139     File:Prophecies relating to the time of the end (IA propheciesrelati00bosw).pdf  [commons]
+yes     Public domain            2106x2643    File:Victoria Daily Times (1909-10-19) (IA victoriadailytimes19091019).pdf  [commons]
+yes     Public domain            2106x2618    File:Victoria Daily Times (1910-05-10) (IA victoriadailytimes19100510).pdf  [commons]
+yes     Public domain            391x650      File:Physical Description of New South Wales and Van Diemen’s Land (IA dli.granth.89517).pdf  [commons]
+yes     Public domain            2122x2739    File:Victoria Daily Times (1901-10-23) (IA victoriadailytimes19011023).pdf  [commons]
+yes     Public domain            833x1362     File:The book and its story - a narrative for the young (IA bookitsstoryna00rany).pdf  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ company store coal town
+# Commons file search: 'company store coal town'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     CC BY 2.0                3453x2315    File:Hocking Valley Coal Company Store (28394632972).jpg  [commons]
+yes     Public domain            3000x2394    File:Company store. Koppers Coal Division, Federal ^1 Mine, Grant Town, Marion County, West Virginia. - NARA - 540275.jpg  [commons]
+yes     CC BY 2.0                3000x2023    File:Old coal company store wilder tennessee 1974.jpg  [commons]
+yes     Public domain            3000x2394    File:Company store. Koppers Coal Division, Federal ^1 Mine, Grant Town, Marion County, West Virginia. - NARA - 540275.tif  [commons]
+yes     CC BY-SA 3.0             1824x1318    File:Pageton Company Store.jpg  [commons]
+yes     CC BY-SA 3.0             3648x2736    File:Pageton WV Coal Store.jpg  [commons]
+yes     Public domain            5462x6789    File:Koppers Coal Division, Federal -1 Mine, Grant Town, Marion County, West Virginia. Part of company store - DPLA - 492dd6ec05632d96609a7b913d36625c.tiff  [commons]
+yes     CC BY 2.0                3648x2736    File:Itmann Company Store (4717609393).jpg  [commons]
+yes     CC BY 2.0                3648x2736    File:Itmann Company Store (4718259072).jpg  [commons]
+yes     CC BY 2.0                3648x2736    File:Itmann Company Store (4717604473).jpg  [commons]
+yes     Public domain            640x441      File:Caples-company-store-wv1.jpg  [commons]
+yes     Public domain            6789x5462    File:Koppers Coal Division, Federal -1 Mine, Grant Town, Marion County, West Virginia. Preparing to inspect company store at Federal -1 Mine, Koppers - DPLA - e0bfffa63ec33a91b68d2b2652b57e80.tiff  [commons]
+yes     Public domain            600x479      File:Company store. Koppers Coal Division, Federal -1 Mine, Grant Town, Marion County, West Virginia. - DPLA - 7fec2bf5d4392f8a3ea3b17a909047b8 (page 1).gif  [commons]
+yes     Public domain            3000x2023    File:OLD COAL COMPANY STORE WHICH WAS GUTTED BY FIRE IN THE FENTRESS COUNTY, TENNESSEE, TOWN OF WILDER NEAR COOKEVILLE.... - NARA - 556330.jpg  [commons]
+yes     Public domain            3000x2023    File:OLD COAL COMPANY STORE WHICH WAS GUTTED BY FIRE IN THE FENTRESS COUNTY, TENNESSEE, TOWN OF WILDER NEAR COOKEVILLE.... - NARA - 556330.tif  [commons]
+yes     Public domain            6755x5428    File:Company store. Koppers Coal Division, Federal -1 Mine, Grant Town, Marion County, West Virginia. - DPLA - 7fec2bf5d4392f8a3ea3b17a909047b8 (page 4).tiff  [commons]
+yes     Public domain            3000x2396    File:The company store. Many families in this camp shop in nearby town where better quality and selection of merchandise... - NARA - 540817.jpg  [commons]
+yes     Public domain            700x561      File:Pacific Coast Coal Co General Merchandise Store, Black Diamond, ca 1915 (MOHAI 4227).jpg  [commons]
+yes     Public domain            6789x5462    File:Gilliam Coal and Coke Company, Gilliam Mine, Gilliam, McDowell County, West Virginia. The company store. Many families in this camp shop in nearby town where better quality and sele - DPLA - baa6353f24a7bc5cb12fdfbcfce144cf.tiff  [commons]
+yes     Public domain            3000x2396    File:The company store. Many families in this camp shop in nearby town where better quality and selection of merchandise... - NARA - 540817.tif  [commons]
+yes     Public domain            6789x5462    File:The company store. Many families in this camp shop in nearby town where better quality and selection of merchandise is carried. Gilliam Coal and Coke Company, Gilliam Mine, Gilliam, - DPLA - 117ece008732e4098cef8ea295a77fbb (page 4).tiff  [commons]
+yes     Public domain            600x479      File:The company store. Many families in this camp shop in nearby town where better quality and selection of merchandise is carried. Gilliam Coal and Coke Company, Gilliam Mine, Gilliam, - DPLA - 117ece008732e4098cef8ea295a77fbb (page 1).gif  [commons]
+yes     Public domain            6739x5462    File:Koppers Coal Division, Federal -1 Mine, Grant Town, Marion County, West Virginia. Admiral Boone and members of his medical survey group inspecting company store - DPLA - 06f76c3556ed00209232d1482c92d345.tiff  [commons]
+yes     CC BY-SA 3.0             3648x1772    File:Itmann West Virginia Company Store.jpg  [commons]
+yes     Public domain            1518x800     File:Area near store, Berwind, Colorado, 1902.png  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Lehigh Canal anthracite
+# Commons file search: 'Lehigh Canal anthracite'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            1541x872     File:1904 - Adams Island and Lehigh Canal with CRRNJ tracs.jpg  [commons]
+yes     Public domain            857x649      File:Chutes Loading the Canal Boats on the Lehigh Canal.jpg  [commons]
+yes     Public domain            2508x3828    File:1937 - Lehigh Navigation Coal Company - 13 Sep MC - Allentown PA.jpg  [commons]
+yes     Public domain            10328x7760   File:Profiles of the canals and rail roads for transporting anthracite coal from the several coal fields to the city of New York (NYPL b20643916-5800302).tiff  [commons]
+yes     Public domain            10691x8329   File:Map of the mines, canals, and rail roads owned or controlled by the Lehigh Coal & Navigation Co. - (Lehigh and Wyoming valleys, Pennsylvania). LOC 95685710.jpg  [commons]
+yes     Public domain            741x1168     File:Reminiscences of the early anthracite-iron industry (IA reminiscencesofe00thomiala).pdf  [commons]
+yes     Public domain            1677x810     File:USGS relief-Broad Mountain and Terrains it dominates west of the Lehigh Gorge and north of Tamaqua, Nesquehoning and Jim Thorpe, PA.png  [commons]
+yes     CC BY-SA 3.0             2048x1536    File:FAB's IMG 4667 Lehigh Coal & Navigation Corp-HQ,Mauch Chunk-Jim Thorpe,PA.JPG  [commons]
+yes     Public domain            837x1252     File:The economic history of the anthracite-tidewater canals (IA economichistoryo00jonerich).pdf  [commons]
+yes     CC BY-SA 3.0             2048x1536    File:FAB's IMG 4663 Lehigh Coal & Navigation Corp-HQ,Mauch Chunk-Jim Thorpe,PA.JPG  [commons]
+yes     CC BY-SA 3.0             2048x1536    File:FAB's IMG 4662 Lehigh Coal & Navigation Corp-HQ,Mauch Chunk-Jim Thorpe,PA.JPG  [commons]
+yes     CC BY-SA 3.0             2048x1536    File:FAB's IMG 4661 Lehigh Coal & Navigation Corp-HQ,Mauch Chunk-Jim Thorpe,PA.JPG  [commons]
+yes     CC BY-SA 3.0             2048x1536    File:FAB's IMG 4668 Lehigh Coal & Navigation Corp-HQ,Mauch Chunk-Jim Thorpe,PA.JPG  [commons]
+yes     CC BY-SA 3.0             2048x1536    File:FAB's IMG 4666 Lehigh Coal & Navigation Corp-HQ,Mauch Chunk-Jim Thorpe,PA.JPG  [commons]
+yes     Public domain            1145x1489    File:The Anthracite Forest Region, a problem area (IA anthraciteforest648ines).pdf  [commons]
+yes     Public domain            10691x8329   File:Map of the mines, canals, and rail roads owned or controlled by the Lehigh Coal & Navigation Co. - (Lehigh and Wyoming valleys, Pennsylvania). LOC 95685710.tif  [commons]
+yes     Public domain            700x1112     File:The Anthracite Coal Trade of Pennsylvania (IA jstor-25103787).pdf  [commons]
+yes     Public domain            1325x2112    File:Operating and financial performance of anthracite railroads (IA operatingfinanci00lauc).pdf  [commons]
+yes     Public domain            818x1250     File:The anthracite coal industry; a study of the economic conditions and relations of the co-operative forces in the development of the anthracite coal industry of Pennsylvania (IA cu31924054550425).pdf  [commons]
+yes     Public domain            881x1337     File:The anthracite coal industry; a study of the economic conditions and relations of the co-operative forces in the development of the anthracite coal industry of Pennsylvania (IA anthracitecoalin00roberich).pdf  [commons]
+yes     Public domain            1581x978     File:1882 - Saegers Mill.jpg  [commons]
+yes     Public domain            714x1135     File:The Morris and Essex R. R., and the anthracite coal regions of Pennsylvania (IA morrisessexrrant00wall).pdf  [commons]
+yes     Public domain            1300x900     File:Farming opportunities along the Lehigh Valley railroad .. (IA farmingopportuni00lehirich).pdf  [commons]
+yes     Public domain            758x1147     File:The cost of transportation on the Erie Canal and by rail (IA cu31924030119816).pdf  [commons]
+yes     Public domain            687x1166     File:Notes on the use of anthracite in the manufacture of iron. (microform) With some remarks on its evaporating power (IA notesonuseofanth00johnrich).pdf  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ coal breaker boys Pennsylvania
+# Commons file search: 'coal breaker boys Pennsylvania'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            976x689      File:Pennsylvania coal breakers, (Breaker Boys), 1912.jpg  [commons]
+yes     Public domain            804x1024     File:Breaker boys, Woodward Coal Mines, Kingston, Pa., ca. 1900.jpg  [commons]
+yes     Public domain            4661x3260    File:Pennsylvania breaker boys 1911.jpg  [commons]
+yes     Public domain            5000x3511    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC cph.3a24713.jpg  [commons]
+yes     Public domain            5000x3511    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC cph.3a24713.tif  [commons]
+yes     Public domain            700x558      File:Breaker Boys in Coal Mine South Pittston Pennsylvania by Lewis Hine.jpeg  [commons]
+yes     Public domain            2847x1932    File:Breaker boys. Smallest is Angelo Ross. Hughestown Borough Coal Co. Pittston, Pa. - NARA - 523384.jpg  [commons]
+yes     Public domain            2280x1592    File:Breaker Boys 1.jpg  [commons]
+yes     Public domain            5000x3640    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC nclc.01129.jpg  [commons]
+yes     Public domain            5000x3525    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC nclc.01128.jpg  [commons]
+yes     Public domain            690x800      File:Group of breaker boys in -9 breaker.jpg  [commons]
+yes     Public domain            4806x3276    File:Group of Breaker boys. Smallest is Sam Belloma.jpg  [commons]
+yes     Public domain            5000x3521    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC cph.3a15216.jpg  [commons]
+yes     Public domain            1024x719     File:Hughestown PA Breaker Boys 1911.jpg  [commons]
+yes     Public domain            4788x3362    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC cph.3a15216 (cropped).jpg  [commons]
+yes     Public domain            593x423      File:Breaker Boys 1.png  [commons]
+yes     Public domain            1536x1024    File:Boys picking coal in Pennsylvania mine - DPLA - 95151a1026e138db6fe16b0e239baeb8.jpg  [commons]
+yes     Public domain            5000x3640    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC nclc.01129.tif  [commons]
+yes     Public domain            5000x3521    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC cph.3a15216.tif  [commons]
+yes     Public domain            5000x3525    File:Breaker boys working in Ewen Breaker of Pennsylvania Coal Co. For some of their names see labels 1927 to 1930. LOC nclc.01128.tif  [commons]
+yes     Public domain            5000x3512    File:Group of Breaker Boys in -9 Breaker, Hughestown Borough, Pennsylvania Coal Co. Smallest boy is Angelo Ross (see photos and labels -1953 & -1954). LOC cph.3a24718.tif  [commons]
+yes     Public domain            5000x3512    File:Group of Breaker Boys in -9 Breaker, Hughestown Borough, Pennsylvania Coal Co. Smallest boy is Angelo Ross (see photos and labels -1953 & -1954). LOC cph.3a24718.jpg  [commons]
+yes     CC BY-SA 2.0             1280x776     File:Child Labor in United States, coal mines Pennsylvania.jpg  [commons]
+yes     Public domain            1024x1536    File:Inside conveyer line which conveys coal from shute at top of shaft up into breaker, Scranton, Pennsylvania - DPLA - f502881e2b46a5a0b6c54dc76599d468.jpg  [commons]
+yes     Public domain            5000x3550    File:Noon hour in the Ewen Breaker, Pennsylvania Coal Co. LOC cph.3a24717.tif  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Lackawanna Steel Buffalo
+# Commons file search: 'Lackawanna Steel Buffalo'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            5013x3605    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-126.tif  [commons]
+yes     CC BY-SA 4.0             4032x3024    File:Cargill Pool Elevator and former Lackawanna Steel Plant site as seen from Buffalo Harbor State Park, Buffalo, New York - 20190724.jpg  [commons]
+yes     Public domain            5027x3666    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-155.tif  [commons]
+yes     Public domain            5451x4401    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-116.tif  [commons]
+yes     Public domain            5046x3586    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-16.tif  [commons]
+yes     Public domain            5051x3628    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-51.tif  [commons]
+yes     Public domain            5007x3642    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-6.tif  [commons]
+yes     Public domain            5045x3619    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-162.tif  [commons]
+yes     Public domain            5027x3661    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-145.tif  [commons]
+yes     Public domain            5013x3623    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-15.tif  [commons]
+yes     Public domain            5083x3633    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-157.tif  [commons]
+yes     Public domain            3664x5037    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-13.tif  [commons]
+yes     Public domain            5004x3623    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-87.tif  [commons]
+yes     Public domain            5025x3672    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-156.tif  [commons]
+yes     Public domain            5009x3572    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-89.tif  [commons]
+yes     Public domain            5069x3628    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-12.tif  [commons]
+yes     Public domain            5041x3642    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-108.tif  [commons]
+yes     Public domain            3581x5004    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-37.tif  [commons]
+yes     Public domain            5215x4208    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-133.tif  [commons]
+yes     Public domain            5396x4335    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-117.tif  [commons]
+yes     Public domain            5018x3591    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-9.tif  [commons]
+yes     Public domain            3651x5060    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-106.tif  [commons]
+yes     Public domain            4994x3616    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-143.tif  [commons]
+yes     Public domain            5013x3624    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-55.tif  [commons]
+yes     Public domain            5069x3605    File:Bethlehem Steel Corporation, Lackawanna Plant, Route 5 on Lake Erie, Buffalo, Erie County, NY HAER NY,15-LACK,1-153.tif  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Susquehannock
+# Commons file search: 'Susquehannock'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     CC BY 2.0                497x310      File:Susquehannock lang.png  [commons]
+yes     Public domain            438x800      File:Depiction of a Susquehannock on the Smith Map (1624).jpg  [commons]
+yes     Public domain            872x1310     File:The location of Susquehannock Fort .. (IA locationofsusque00landrich).pdf  [commons]
+yes     CC BY-SA 3.0             2048x1536    File:Susquehannock Artifacts PA State Museum.JPG  [commons]
+yes     Public domain            305x163      File:Conestoga configurations.png  [commons]
+yes     CC BY-SA 2.0             4608x3456    File:Conestoga Station - March 2019.jpg  [commons]
+yes     CC BY 2.0                3872x2592    File:Conestoga Wagon (23220053980).jpg  [commons]
+yes     Public domain            1280x543     File:Conestoga High School.jpg  [commons]
+yes     CC BY-SA 3.0             5254x2018    File:Susquehannock State Forest panorama.jpg  [commons]
+yes     CC BY-SA 3.0             641x480      File:Susquehannock State Park Overlook DCNR.jpg  [commons]
+yes     CC BY-SA 3.0             1536x2048    File:Susquehannock State Forest View.jpg  [commons]
+yes     CC BY 4.0                2280x1820    File:Conestoga Manor 1717.jpg  [commons]
+yes     Public domain            188x500      File:Conestoga-1620.jpg  [commons]
+yes     Public domain            969x1292     File:Conestoga II Diagram.png  [commons]
+yes     Public domain            9020x5769    File:Conestoga ship.jpg  [commons]
+yes     CC BY-SA 4.0             4032x3024    File:Conestoga River from Conestoga Greenway Trail.jpeg  [commons]
+yes     Public domain            740x456      File:USS Conestoga h55321.jpg  [commons]
+yes     CC BY 2.0                1044x713     File:Ken Block Susquehannock Rally 2010 009.jpg  [commons]
+yes     CC0                      4396x3297    File:Conestoga PA Main Street.jpg  [commons]
+yes     CC0                      2734x3656    File:Conestoga Building, 2022-11-01, 01.jpg  [commons]
+yes     Public domain            1941x959     File:Conestoga Bridge 1872.jpg  [commons]
+yes     CC BY 2.0                3872x2592    File:Conestoga Wagon (23489734196).jpg  [commons]
+yes     Public domain            361x277      File:SusquehannockFort sm.jpg  [commons]
+yes     CC BY-SA 2.0             3648x2462    File:Dave Mirra Susquehannock Rally 2011 001.jpg  [commons]
+yes     CC BY 2.0                1044x713     File:Antoine L'Estage Susquehannock Rally 2010 004.jpg  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Ludlow tent colony ruins 1914
+# Commons file search: 'Ludlow tent colony ruins 1914'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            1536x1024    File:Ruins of Ludlow tent colony - DPLA - 3405e8fe8059bec568abc12d0ffac2a8.jpg  [commons]
+yes     Public domain            5766x4235    File:Ruins Ludlow Colony - Trinidad, Col. LCCN2014695836.jpg  [commons]
+yes     Public domain            1536x1024    File:Red Cross searching ruins at Ludlow, Colorado - DPLA - 43cac0167cb0b5dd27aa4cc382d208a0.jpg  [commons]
+yes     Public domain            2114x2635    File:Victoria Daily Times (1914-04-25) (IA victoriadailytimes19140425).pdf  [commons]
+yes     Public domain            1645x2095    File:The Masses, Volume 5, Issue 9.pdf  [commons]
+yes     Public domain            943x1483     File:Appletons' cyclopædia of American biography (IA appletonscyclop05wils).pdf  [commons]
+yes     Public domain            1333x2231    File:The Corwin genealogy - (Curwin, Curwen, Corwine) in the United States (IA corwingenealogyc00corwuoft).pdf  [commons]
+yes     Public domain            983x1456     File:Appletons' cyclopædia of American biography (IA appletoncyclo05wilsrich).pdf  [commons]
+yes     Public domain            1170x1956    File:Appletons' cyclopædia of American biography (IA appletonscyclopdv5wils).pdf  [commons]
+yes     Public domain            762x1079     File:Once upon a time in Connecticut (IA onceupontimeinco01newt).pdf  [commons]
+yes     Public domain            795x1104     File:Once upon a time in Connecticut (IA onceupontimeinco02newt).pdf  [commons]
+yes     Public domain            975x1472     File:My life of exploration (IA mylifeofexplorat00lumhrich).pdf  [commons]
+yes     Public domain            766x1112     File:Once upon a time in Connecticut (IA onceupontimeinco00newt).pdf  [commons]
+
+13 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Pan-American Exposition Electric Tower 1901
+# Commons file search: 'Pan-American Exposition Electric Tower 1901'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            1504x784     File:Electric towers at Buffalo Pan-American Exposition, 1901.jpg  [commons]
+yes     Public domain            1701x2262    File:Pan-American Exposition - Electric Tower from Esplanade.jpg  [commons]
+yes     Public domain            2265x1707    File:Pan-American Exposition - Electric Tower seen through the Approach.jpg  [commons]
+yes     Public domain            1704x2210    File:Pan-American Exposition - Electric Tower at Night.jpg  [commons]
+yes     Public domain            2265x1710    File:Pan-American Exposition - Electric Tower and Buildings of Main Court.jpg  [commons]
+yes     Public domain            1708x2224    File:Pan-American Exposition - Electric Tower, View from North.jpg  [commons]
+yes     Public domain            1703x2210    File:Pan-American Exposition - The Electric Tower.jpg  [commons]
+yes     Public domain            1709x2245    File:Pan-American Exposition - Base of Electric Tower.jpg  [commons]
+yes     Public domain            1731x2241    File:Pan-American Exposition - West Wing of Electric Tower.jpg  [commons]
+yes     Public domain            2283x1728    File:Pan-American Exposition - Base of Tower at Night.jpg  [commons]
+yes     Public domain            2277x1713    File:Pan-American Exposition - View from Electric Tower, Looking South.jpg  [commons]
+yes     Public domain            2253x1686    File:Pan-American Exposition - The Midway from the Electric Tower.jpg  [commons]
+yes     Public domain            2988x1728    File:The great Search Light and Electric Tower, Pan American Exposition (NYPL b11707957-G91F104 018F).tiff  [commons]
+yes     CC0                      4000x2014    File:-Group of 3 Stereograph Views of the 1901 Pan American Exposition, Buffalo, New York- MET DP75700.jpg  [commons]
+yes     Public domain            1225x2000    File:Adele Quinette Phelps World's Fair Chronicle- Postcard of Electric Tower, Pan-American Exposition, 1901 - DPLA - 6362234ffae765836d60e24ccaf4de2e (page 1).jpg  [commons]
+yes     Public domain            2247x1671    File:Pan-American Exposition - Agriculture, by Phinister A. Proctor.jpg  [commons]
+yes     Public domain            5408x2766    File:Great Electric Tower by Night, Pan American Expo (Stereo Card).tif  [commons]
+yes     Public domain            320x240      File:Pan-American Exposition by Night (1901).webm  [commons]
+yes     Public domain            2000x1203    File:Adele Quinette Phelps World's Fair Chronicle- Postcard of Electric Tower, Pan-American Exposition, 1901 - DPLA - 6362234ffae765836d60e24ccaf4de2e (page 2).jpg  [commons]
+yes     Public domain            350x600      File:Miniature Railway at Pan-American Exposition 07.jpg  [commons]
+yes     Public domain            1536x1244    File:N.Y. - Buffalo - Pan American Expo. - panoramic view, with Electric Tower in center LCCN2006684384.jpg  [commons]
+yes     Public domain            1536x1244    File:N.Y. - Buffalo - Pan American Expo. - panoramic view, with Electric Tower in center LCCN2006684384.tif  [commons]
+yes     Public domain            2259x1713    File:Pan-American Exposition - On the Midway.jpg  [commons]
+NO      No restrictions          2392x3620    File:Official catalogue and guide book to the Pan-American exposition (1901) (14595869760).jpg  [commons]
+yes     Public domain            666x1293     File:Pan-American exposition, Buffalo, May 1st to November 1st, 1901 (IA panamericanexpos03pana).pdf  [commons]
+
+24 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Rough Riders San Juan Hill 1898
+# Commons file search: 'Rough Riders San Juan Hill 1898'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            1144x925     File:TR San Juan Hill 1898.jpg  [commons]
+yes     Public domain            1383x1200    File:San Juan Hill by Kurz and Allison.JPG  [commons]
+yes     Public domain            1144x925     File:TR San Juan Hill 1898 (edit).jpg  [commons]
+yes     Public domain            534x676      File:Monument to the Rough Riders near blockhouse on San Juan Hill - Santiago de Cuba - Cuba - 1910.jpg  [commons]
+NO      No restrictions          2816x2018    File:Battle of San Juan Hill - Near Santiago, Cuba.jpg  [commons]
+yes     Public domain            703x919      File:The Rough Riders charging up the San Juan Hill cph.3b30041u.jpg  [commons]
+yes     Public domain            4272x3129    File:The Rough Riders by Mort Kunstler.jpg  [commons]
+yes     Public domain            1475x952     File:Santiago - Campo de batalla San Juan.jpg  [commons]
+yes     Public domain            600x349      File:SanJuanHeightsUSArmyJuly1898VictorsKettleHill.jpg  [commons]
+yes     Public domain            4632x3732    File:Colonel Roosevelt and his Rough Riders at the top of the hill which they captured, Battle of San Juan) - by William Dinwiddie LCCN96521936.jpg  [commons]
+yes     Public domain            1152x1464    File:The Battle of San Juan Hill (by) Richard Harding Davis ... October Scribner's - Christy. LCCN93504051.jpg  [commons]
+NO      No restrictions          2141x3124    File:Colonel Roosevelt charging up San Juan Hill LOC 4231389760.jpg  [commons]
+yes     Public domain            3099x2775    File:Charge up San Juan Hill BAH-p251.png  [commons]
+yes     CC BY-SA 4.0             10050x4588   File:San Juan Hill.png  [commons]
+yes     Public domain            685x1081     File:Santiago - Capture of San Juan Hill.jpg  [commons]
+yes     Public domain            3000x1736    File:The Scream of Shrapnel at San Juan Hill by Frederic Remington 1898.jpeg  [commons]
+yes     Public domain            4632x3732    File:Colonel Roosevelt and his Rough Riders at the top of the hill which they captured, Battle of San Juan) - by William Dinwiddie LCCN96521936.tif  [commons]
+yes     Public domain            3356x2722    File:RoughRiders.jpeg  [commons]
+yes     Public domain            9692x7279    File:"How the day was won" Charge of the Tenth Cavalry Regiment U.S.A. San Juan Hill; Cuba, July 1st 1898 LCCN2003671683.jpg  [commons]
+NO      No restrictions          3272x1968    File:An illustrated history of our war with Spain - its causes, incidents, and results (1898) (14579461729).jpg  [commons]
+yes     Public domain            4700x3225    File:Rough Riders Memorial - Arlington National Cemetery - Arlington Count VA USA - 1912.jpg  [commons]
+yes     Public domain            1564x843     File:Charge of the Rough Riders at San Juan Hill.JPG  [commons]
+NO      No restrictions          4224x3168    File:Hero tales of the American soldier and sailor as told by the heroes themselves and their comrades; the unwritten history of American chivalry (1899) (14803818453).jpg  [commons]
+NO      No restrictions          3632x519     File:American Empire Banner.jpg  [commons]
+yes     Public domain            439x720      File:Casualty List, Rough Riders, July 1 to 3, 1898. Attachment to Report of Operations - NARA - 301979 (page 4).gif  [commons]
+
+20 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Pullman Illinois company town
+# Commons file search: 'Pullman Illinois company town'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            3710x1252    File:Pullman company town, fire insurance plan, 1901.jpg  [commons]
+yes     Public domain            2240x764     File:Pullman company town, fire insurance plan, 1901 (legend with buildings).jpg  [commons]
+yes     Public domain            2448x804     File:Pullman company town, fire insurance plan, 1901 (legend).jpg  [commons]
+yes     Public domain            1392x524     File:Pullman company town, early plan ca.1883.jpg  [commons]
+yes     Public domain            708x893      File:Vol. 25 of 34- Pullman Company scrapbooks, 1865-1925 (IA scrapbooks1865192534pull).pdf  [commons]
+yes     Public domain            716x897      File:Vol. 27 of 34- Pullman Company scrapbooks, 1865-1925 (IA scrapbooks1865192734pull).pdf  [commons]
+yes     CC BY 2.0                1200x1600    File:Historic Pullman Houses on 112th Street (169408992).jpg  [commons]
+yes     CC BY 2.0                3000x1995    File:Pullman National Monument (50234673628).jpg  [commons]
+yes     CC BY 2.0                3000x2247    File:Pullman National Monument (50225200281).jpg  [commons]
+yes     CC BY 2.0                3000x2247    File:Pullman National Monument (50225812176).jpg  [commons]
+yes     Public domain            766x1208     File:George M. Pullman and Pullman's Palace Car Co. versus the New York Central Sleeping Car Company and Webster Wagner. In equity (IA georgempullmanpu00unit).pdf  [commons]
+yes     CC BY 2.0                3000x2247    File:Pullman National Monument (50223624628).jpg  [commons]
+yes     CC BY 2.0                3000x2247    File:Pullman National Monument (50228780937).jpg  [commons]
+yes     CC BY 2.0                3000x1995    File:Pullman National Monument (50232943971).jpg  [commons]
+yes     CC BY 2.0                3000x1995    File:Pullman National Monument (50241058513).jpg  [commons]
+yes     CC BY 2.0                3000x1995    File:Pullman National Monument (50239091718).jpg  [commons]
+yes     CC BY 2.0                3000x1995    File:Pullman National Monument (50243550976).jpg  [commons]
+yes     CC BY 2.0                3000x2247    File:Pullman National Monument (50224725421).jpg  [commons]
+yes     CC BY 2.0                3000x1995    File:Pullman National Monument (50243294707).jpg  [commons]
+yes     Public domain            679x1058     File:The story of the Pullman car (IA storyofpullmancahusb).pdf  [commons]
+yes     Public domain            779x1141     File:The story of the Pullman car (IA storyofpullmanca01husb).pdf  [commons]
+yes     Public domain            868x1131     File:The town of Harvey, Illinois, manufacturing suburb of Chicago, aged two years (IA townofharveyilli00harv).pdf  [commons]
+yes     CC BY 2.0                3000x1995    File:Pullman National Monument - 50239624088.jpg  [commons]
+yes     Public domain            712x897      File:Vol. 22 of 34- Pullman Company scrapbooks, 1865-1925 (IA scrapbooks1865192234pull).pdf  [commons]
+yes     Public domain            708x897      File:Vol. 26 of 34- Pullman Company scrapbooks, 1865-1925 (IA scrapbooks1865192634pull).pdf  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Lead Belly Huddie Ledbetter
+# Commons file search: 'Lead Belly Huddie Ledbetter'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            158x196      File:Huddie William Ledbetter in July 1934, from- Angola Prison -- Leadbelly in the foreground (cropped).jpg  [commons]
+yes     Public domain            1698x1358    File:1935 face detail, Huddie Ledbetter (Leadbelly) and Martha Promise Ledbetter, Wilton, Conn. (cropped).jpg  [commons]
+yes     Public domain            240x296      File:Huddie Ledbetter (Leadbelly) taken by Alan Lomax.jpg  [commons]
+yes     Public domain            301x47       File:Signature detail of "HUDDIE LEDBETTER" "REGISTRATION CARD" "SERIAL NUMBER U2214" "604 E 9TH ST., N.Y. N. Y.", from- Lead Belly draft registration card, ca. 1942 (cropped) (cropped).jpg  [commons]
+yes     Public domain            807x537      File:"HUDDIE LEDBETTER" "REGISTRATION CARD" "SERIAL NUMBER U2214" "604 E 9TH ST., N.Y. N. Y." "DATE OF BIRTH 1-23-1889" "PLACE OF BIRTH FREEPORT LOUISIANA" and "MARTHA LEDBETTER", from- Lead Belly draft registration card, ca. 1942 (cropped).jpg  [commons]
+yes     Public domain            936x632      File:Lead Belly draft registration card, ca. 1942.jpg  [commons]
+yes     Public domain            2840x2195    File:Huddie Ledbetter (Leadbelly) and Martha Promise Ledbetter, Wilton, Conn..jpg  [commons]
+yes     Public domain            1093x1415    File:Leadbelly with Accordeon.jpg  [commons]
+yes     CC BY-SA 4.0             400x392      File:1940 Lead Belly Victor Record.jpg  [commons]
+yes     Public domain            8172x8070    File:Individuals - Leadbelly (Huddie Ledbetter). undated Slide 2.png  [commons]
+yes     Public domain            640x495      File:Angola Prison -- Leadbelly in the foreground.jpg  [commons]
+yes     Public domain            300x375      File:Leadbelly NYWT 2.jpg  [commons]
+yes     Public domain            120x150      File:Leadbelly NYWT.jpg  [commons]
+yes     CC BY-SA 4.0             601x579      File:Play Parties in Song and Dance Album Cover.jpg  [commons]
+yes     Public domain            920x1240     File:Leadbelly, National Press Club, Washington, D.C., between 1938 and 1948 (William P. Gottlieb 13561).jpg  [commons]
+yes     Public domain            412x438      File:Leadbelly2byGottliebcropped.jpg  [commons]
+yes     Public domain            1024x780     File:(Portrait of Bunk Johnson, Leadbelly, George Lewis, and Alcide Pavageau, Stuyvesant Casino, New York, N.Y., ca. June 1946) (LOC) (4843748648).jpg  [commons]
+yes     Public domain            1024x1325    File:(Portrait of Leadbelly, National Press Club, Washington, D.C., between 1938 and 1948) (LOC) (5395251835).jpg  [commons]
+yes     Public domain            749x936      File:Detail, (Portrait of Leadbelly, National Press Club, Washington, D.C., between 1938 and 1948) (LOC) (5395251967) (cropped).jpg  [commons]
+yes     Public domain            960x716      File:Bunk Johnson, Leadbelly, George Lewis, Alcide Pavageau (Gottlieb 04541).jpg  [commons]
+yes     Public domain            1024x1385    File:(Portrait of Leadbelly, National Press Club, Washington, D.C., between 1938 and 1948) (LOC) (4843137007).jpg  [commons]
+yes     Public domain            848x1118     File:Detail, (Portrait of Leadbelly, National Press Club, Washington, D.C., between 1938 and 1948) (LOC) (4843137007) (cropped).jpg  [commons]
+yes     Public domain            428x534      File:Face detail, (Portrait of Leadbelly, National Press Club, Washington, D.C., between 1938 and 1948) (LOC) (4843137007) (cropped) (cropped).jpg  [commons]
+yes     Public domain            1024x1345    File:(Portrait of Leadbelly, National Press Club, Washington, D.C., between 1938 and 1948) (LOC) (5395251967).jpg  [commons]
+yes     CC0                      700x600      File:Songs by Lead Belly 600px.jpg  [commons]
+
+25 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ Ku Klux Klan parade Washington 1928
+# Commons file search: 'Ku Klux Klan parade Washington 1928'
+
+FREE?   LICENSE                  DIMENSIONS   TITLE
+------------------------------------------------------------------------------------
+yes     Public domain            3000x2395    File:The Ku Klux Klan on parade down Pennsylvania Avenue, 1928 - NARA - 541885.jpg  [commons]
+yes     Public domain            3000x2395    File:The Ku Klux Klan on parade down Pennsylvania Avenue, 1928 - NARA - 541885.tif  [commons]
+yes     Public domain            750x1210     File:Books from the Library of Congress (IA originalkukluxkl01miln).pdf  [commons]
+yes     Public domain            2489x3204    File:The New York Times 1928-09-19- Vol 77 Iss 25806 (IA per new-york-times-magazine the-new-york-times 1928-09-19 77 25806).pdf  [commons]
+yes     Public domain            2616x3250    File:The New York Times 1928-10-30- Vol 78 Iss 25847 (IA per new-york-times-magazine the-new-york-times 1928-10-30 78 25847).pdf  [commons]
+yes     Public domain            2552x3227    File:The New York Times 1928-12-16- Vol 78 Iss 25894 (IA per new-york-times-magazine the-new-york-times 1928-12-16 78 25894).pdf  [commons]
+yes     Public domain            2608x3225    File:The New York Times 1928-10-14- Vol 78 Iss 25831 (IA per new-york-times-magazine the-new-york-times 1928-10-14 78 25831).pdf  [commons]
+yes     Public domain            2618x3252    File:The New York Times 1928-10-29- Vol 78 Iss 25846 (IA per new-york-times-magazine the-new-york-times 1928-10-29 78 25846).pdf  [commons]
+yes     Public domain            1425x2083    File:The Norwich Guidon, Volume 8, Issue 10.pdf  [commons]
+yes     Public domain            583x434      File:Ku Klux Klan members march down Pennsylvania Avenue in Washington, D.C. in 1928.jpg  [commons]
+yes     Public domain            675x1043     File:The Civil War and Reconstruction in Florida (IA civilwarreconstr00indavi).pdf  [commons]
+yes     Public domain            1275x1650    File:(Catholic League) - DPLA - bdaca440cd6e0532e08b2235bb6f6aac.pdf  [commons]
+yes     Public domain            2514x3218    File:The New York Times 1923-10-23- Vol 73 Iss 24013 (IA per new-york-times-magazine the-new-york-times 1923-10-23 73 24013).pdf  [commons]
+yes     Public domain            1116x1806    File:Diversity and Cultural Resources... Volume 22, No. 8... United States Department of the Interior... 1999 (IA doi-report i-2986-222-8).pdf  [commons]
+yes     Public domain            2568x3289    File:The New York Times 1923-05-28- Vol 72 Iss 23865 (IA per new-york-times-magazine the-new-york-times 1923-05-28 72 23865).pdf  [commons]
+yes     Public domain            2610x3325    File:Glendale Daily Press 1923-10-30 (IA cgl 002250).pdf  [commons]
+yes     Public domain            2537x3247    File:The New York Times 1923-04-02- Vol 72 Iss 23809 (IA per new-york-times-magazine the-new-york-times 1923-04-02 72 23809).pdf  [commons]
+yes     Public domain            2622x3370    File:The Glendale Evening News 1922-08-31 (IA cgl 004778).pdf  [commons]
+yes     Public domain            2550x3587    File:The Glendale Evening News 1924-06-26 (IA cgl 005345).pdf  [commons]
+yes     Public domain            2639x3300    File:The New York Times 1924-05-29- Vol 73 Iss 24232 (IA per new-york-times-magazine the-new-york-times 1924-05-29 73 24232).pdf  [commons]
+yes     Public domain            2558x3177    File:The New York Times 1929-10-28- Vol 79 Iss 26210 (IA per new-york-times-magazine the-new-york-times 1929-10-28 79 26210).pdf  [commons]
+yes     Public domain            2520x3189    File:The New York Times 1923-07-21- Vol 72 Iss 23919 (IA per new-york-times-magazine the-new-york-times 1923-07-21 72 23919).pdf  [commons]
+yes     Public domain            1193x1679    File:Carolina magazine (serial) (IA carolinamagazine67univ).pdf  [commons]
+yes     Public domain            2614x3270    File:The New York Times 1923-05-18- Vol 72 Iss 23855 (IA per new-york-times-magazine the-new-york-times 1923-05-18 72 23855).pdf  [commons]
+
+24 free file(s). Re-run with --json to get a manifest skeleton of just those.
+
+############ DONE
+Send back the lines marked 'yes'. Or re-run any single one with --json
+to get a paste-ready manifest entry, e.g.:
+    python3 /Users/rappoccio/Claude/PHY199RAP/tools/fetch_lecture_media.py --search "Sid Hatfield" --json

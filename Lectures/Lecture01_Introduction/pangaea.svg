@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="900" height="580" fill="#e8f1fb"/>
+  <!-- title -->
+  <text x="450" y="42" text-anchor="middle" font-size="30" font-weight="bold" fill="#005BBB">Pangaea, ~300 million years ago</text>
+  <text x="450" y="72" text-anchor="middle" font-size="18" fill="#33475b">One supercontinent — before the Atlantic Ocean opened</text>
+
+  <!-- ocean label -->
+  <text x="115" y="150" font-size="16" font-style="italic" fill="#6f8bb0">Panthalassa</text>
+  <text x="115" y="170" font-size="16" font-style="italic" fill="#6f8bb0">(the world ocean)</text>
+
+  <!-- Pangaea landmass (cartoon blob) -->
+  <path d="M300 120
+           C 250 150, 210 210, 245 270
+           C 210 320, 235 400, 320 430
+           C 360 480, 470 495, 540 460
+           C 640 470, 720 420, 705 350
+           C 760 300, 740 210, 660 195
+           C 640 140, 540 110, 470 135
+           C 410 105, 340 105, 300 120 Z"
+        fill="#cdbf9c" stroke="#a8996f" stroke-width="3"/>
+
+  <!-- Central Pangean mountain belt (band of little triangles across the landmass) -->
+  <g stroke="#7d6b45" stroke-width="2" fill="#8f7c52">
+    <polygon points="330,300 355,250 380,300"/>
+    <polygon points="372,308 400,246 428,308"/>
+    <polygon points="418,300 448,238 478,300"/>
+    <polygon points="466,306 496,244 526,306"/>
+    <polygon points="512,300 542,240 572,300"/>
+    <polygon points="558,306 586,250 614,306"/>
+  </g>
+  <!-- snow caps -->
+  <g fill="#f4f1e9">
+    <polygon points="355,250 347,266 363,266"/>
+    <polygon points="400,246 391,263 409,263"/>
+    <polygon points="448,238 439,256 457,256"/>
+    <polygon points="496,244 487,261 505,261"/>
+    <polygon points="542,240 533,258 551,258"/>
+    <polygon points="586,250 578,266 594,266"/>
+  </g>
+
+  <!-- belt label -->
+  <text x="470" y="360" text-anchor="middle" font-size="17" font-weight="bold" fill="#5c4d2e">Central Pangean Mountains</text>
+
+  <!-- markers for the two future regions, adjacent along the belt -->
+  <circle cx="392" cy="258" r="7" fill="#005BBB" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="520" cy="252" r="7" fill="#c8102e" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- callout: Buffalo -->
+  <line x1="392" y1="258" x2="250" y2="200" stroke="#005BBB" stroke-width="1.5"/>
+  <rect x="70" y="178" width="182" height="44" rx="6" fill="#ffffff" stroke="#005BBB" stroke-width="1.5"/>
+  <text x="161" y="197" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#005BBB">Future Buffalo</text>
+  <text x="161" y="214" text-anchor="middle" font-size="12" fill="#33475b">(NE North America)</text>
+
+  <!-- callout: Scotland/Scandinavia -->
+  <line x1="520" y1="252" x2="700" y2="200" stroke="#c8102e" stroke-width="1.5"/>
+  <rect x="672" y="176" width="196" height="44" rx="6" fill="#ffffff" stroke="#c8102e" stroke-width="1.5"/>
+  <text x="770" y="195" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#c8102e">Future Scotland</text>
+  <text x="770" y="212" text-anchor="middle" font-size="12" fill="#33475b">&amp; Scandinavia</text>
+
+  <!-- takeaway -->
+  <text x="450" y="512" text-anchor="middle" font-size="16" fill="#33475b">They sat side by side along one mountain range — then the ocean split them apart.</text>
+  <text x="450" y="556" text-anchor="middle" font-size="12" font-style="italic" fill="#8090a5">Schematic cartoon for explanation — not to scale. Concept: the Appalachian–Caledonian (Central Pangean) mountain belt.</text>
+</svg>

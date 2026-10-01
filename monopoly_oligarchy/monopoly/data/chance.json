@@ -1,0 +1,93 @@
+[
+  {
+    "text": "Advance to Go (Collect $200)",
+    "action": "move_to",
+    "destination": 0,
+    "collect_go": true
+  },
+  {
+    "text": "Advance to Illinois Avenue. If you pass Go, collect $200.",
+    "action": "move_to",
+    "destination": 24,
+    "collect_go": true
+  },
+  {
+    "text": "Advance to St. Charles Place. If you pass Go, collect $200.",
+    "action": "move_to",
+    "destination": 11,
+    "collect_go": true
+  },
+  {
+    "text": "Advance token to nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner ten times the amount thrown.",
+    "action": "move_to_nearest",
+    "group": "utility",
+    "collect_go": true,
+    "roll_multiplier": 10
+  },
+  {
+    "text": "Advance token to the nearest Railroad and pay owner twice the rental to which they are otherwise entitled. If Railroad is unowned, you may buy it from the Bank.",
+    "action": "move_to_nearest",
+    "group": "railroad",
+    "collect_go": true,
+    "rent_multiplier": 2
+  },
+  {
+    "text": "Advance token to the nearest Railroad and pay owner twice the rental to which they are otherwise entitled. If Railroad is unowned, you may buy it from the Bank.",
+    "action": "move_to_nearest",
+    "group": "railroad",
+    "collect_go": true,
+    "rent_multiplier": 2
+  },
+  {
+    "text": "Bank pays you dividend of $50.",
+    "action": "collect",
+    "amount": 50
+  },
+  {
+    "text": "Get Out of Jail Free. This card may be kept until needed or traded.",
+    "action": "get_out_of_jail"
+  },
+  {
+    "text": "Go Back 3 Spaces.",
+    "action": "move_relative",
+    "offset": -3,
+    "collect_go": false
+  },
+  {
+    "text": "Go to Jail. Go directly to Jail. Do not pass Go, do not collect $200.",
+    "action": "go_to_jail"
+  },
+  {
+    "text": "Make general repairs on all your property: For each house pay $25, for each hotel pay $100.",
+    "action": "pay_per_building",
+    "per_house": 25,
+    "per_hotel": 100
+  },
+  {
+    "text": "Speeding fine $15.",
+    "action": "pay",
+    "amount": 15
+  },
+  {
+    "text": "Take a trip to Reading Railroad. If you pass Go, collect $200.",
+    "action": "move_to",
+    "destination": 5,
+    "collect_go": true
+  },
+  {
+    "text": "Take a walk on the Boardwalk. Advance token to Boardwalk.",
+    "action": "move_to",
+    "destination": 39,
+    "collect_go": false
+  },
+  {
+    "text": "You have been elected Chairman of the Board. Pay each player $50.",
+    "action": "pay_to_players",
+    "amount": 50
+  },
+  {
+    "text": "Your building loan matures. Collect $150.",
+    "action": "collect",
+    "amount": 150
+  }
+]

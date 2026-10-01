@@ -1,0 +1,58 @@
+---
+# ---------------------------------------------------------------------------
+# HOW TO USE
+#   1. Copy this folder for a new lecture; rename this file (e.g. week03.qmd).
+#   2. Edit the title / subtitle / author below, then edit the slides.
+#   3. From this folder in Terminal:   quarto preview week03.qmd
+#      The browser opens and refreshes every time you save.
+#   A new slide = a level-2 heading (##). The heading becomes the slide title.
+# ---------------------------------------------------------------------------
+title: "Lecture Title"
+subtitle: "PHY199-RAP · Energy in the 21st Century"
+author: "Dr. Salvatore Rappoccio"
+format:
+  # PowerPoint output (source of truth). Path assumes a Lectures/LectureNN/ location.
+  pptx:
+    reference-doc: ../../template/UB-template.pptx
+    slide-level: 2
+  revealjs:
+    theme: [default, ub.scss]
+    slide-number: true
+    center: false
+    progress: false
+    math: katex
+    transition: slide
+    embed-resources: true
+---
+
+## First point
+
+- One idea per slide; keep bullets short
+- **Bold** the key term, *italics* for emphasis
+- The talk carries the detail — the slide is the anchor
+
+::: notes
+Speaker notes live here. They stay off the slide and show in presenter view
+(press `S` while presenting).
+:::
+
+## A formula
+
+Inline math like $E = mc^2$, or a display equation:
+
+$$
+\text{LCOE} = \frac{\text{lifetime costs}}{\text{lifetime energy produced}}
+$$
+
+## A data table
+
+| Quantity | Value |
+|----------|:-----:|
+| Example  |  42   |
+| Another  |   7   |
+
+Cite a source for any figures you present.
+
+## Takeaway
+
+The one thing you want them to remember.

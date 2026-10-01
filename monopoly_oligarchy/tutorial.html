@@ -1,0 +1,791 @@
+<title>Monopoly Oligarchy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;700&display=swap">
+
+<style>
+  /* ── tokens ─────────────────────────────────────────────────────── */
+  :root {
+    --bg:        #1c2026;
+    --bg2:       #232830;
+    --panel:     #2c323a;
+    --border:    #404850;
+    --accent:    #449660;
+    --accent-lt: #5cb878;
+    --danger:    #bc4e48;
+    --text:      #eef0f3;
+    --muted:     #96a0aa;
+    --sidebar-w: 240px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg:      #f4f5f0;
+      --bg2:     #eaebe5;
+      --panel:   #ffffff;
+      --border:  #d0d4cc;
+      --accent:  #2e7a4c;
+      --accent-lt:#449660;
+      --danger:  #b83c36;
+      --text:    #1c2026;
+      --muted:   #5a6268;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg:      #f4f5f0;
+    --bg2:     #eaebe5;
+    --panel:   #ffffff;
+    --border:  #d0d4cc;
+    --accent:  #2e7a4c;
+    --accent-lt:#449660;
+    --danger:  #b83c36;
+    --text:    #1c2026;
+    --muted:   #5a6268;
+  }
+
+  /* ── reset ───────────────────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* ── layout ──────────────────────────────────────────────────────── */
+  .shell {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* ── sidebar ─────────────────────────────────────────────────────── */
+  .sidebar {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    background: var(--bg2);
+    border-right: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding-block: 2rem;
+  }
+  .sidebar-logo {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    letter-spacing: .12em;
+    color: var(--accent-lt);
+    text-transform: uppercase;
+    padding-inline: 1.5rem;
+    margin-bottom: .25rem;
+  }
+  .sidebar-sub {
+    font-size: .75rem;
+    color: var(--muted);
+    padding-inline: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: .04em;
+  }
+  .nav-section {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .65rem;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: .75rem 1.5rem .25rem;
+  }
+  .sidebar nav a {
+    display: block;
+    padding: .35rem 1.5rem;
+    font-size: .875rem;
+    color: var(--muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: color .15s, border-color .15s;
+  }
+  .sidebar nav a:hover,
+  .sidebar nav a.active {
+    color: var(--text);
+    border-left-color: var(--accent-lt);
+  }
+
+  /* ── main content ────────────────────────────────────────────────── */
+  .content {
+    flex: 1;
+    min-width: 0;
+    padding: 3rem 2rem 6rem;
+    max-width: 780px;
+  }
+
+  /* ── page header ─────────────────────────────────────────────────── */
+  .page-header {
+    margin-bottom: 3.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .page-header .eyebrow {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .75rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent-lt);
+    margin-bottom: .5rem;
+  }
+  .page-header h1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2.75rem;
+    letter-spacing: .06em;
+    line-height: 1.1;
+    color: var(--text);
+    text-wrap: balance;
+    margin-bottom: .75rem;
+  }
+  .page-header .subtitle {
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 52ch;
+  }
+
+  /* ── sections ────────────────────────────────────────────────────── */
+  .section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
+  }
+  .section h2 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.1rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--accent-lt);
+    margin-bottom: 1.25rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+  }
+  .section h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: var(--accent);
+    color: #fff;
+    font-size: .7rem;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .section h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 1.75rem 0 .5rem;
+  }
+  .section p {
+    color: var(--text);
+    max-width: 65ch;
+    margin-bottom: .85rem;
+  }
+  .section ul, .section ol {
+    padding-left: 1.5rem;
+    max-width: 62ch;
+    margin-bottom: .85rem;
+  }
+  .section li {
+    margin-bottom: .4rem;
+  }
+
+  /* ── callout boxes ───────────────────────────────────────────────── */
+  .callout {
+    background: var(--panel);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+    max-width: 62ch;
+  }
+  .callout.warn {
+    border-left-color: #e09030;
+  }
+  .callout.danger {
+    border-left-color: var(--danger);
+  }
+  .callout strong {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .8rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: .35rem;
+    color: var(--accent-lt);
+  }
+  .callout.warn strong { color: #e09030; }
+  .callout.danger strong { color: var(--danger); }
+
+  /* ── key/value table ─────────────────────────────────────────────── */
+  .kv {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .3rem 1.5rem;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    max-width: 52ch;
+    font-size: .9rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .kv dt {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .8rem;
+    letter-spacing: .06em;
+    color: var(--muted);
+    white-space: nowrap;
+    padding-top: .1rem;
+  }
+  .kv dd { color: var(--text); }
+
+  /* ── square badge grid ───────────────────────────────────────────── */
+  .square-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: .75rem;
+    margin: 1.25rem 0;
+  }
+  .square-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: .85rem 1rem;
+  }
+  .square-card .sq-label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .7rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: .3rem;
+  }
+  .square-card .sq-name {
+    font-weight: 700;
+    font-size: .9rem;
+    color: var(--text);
+    margin-bottom: .3rem;
+  }
+  .square-card .sq-desc {
+    font-size: .82rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+
+  /* ── keyboard shortcut chip ──────────────────────────────────────── */
+  kbd {
+    display: inline-block;
+    padding: .1em .5em;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .8em;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  /* ── rent table ──────────────────────────────────────────────────── */
+  .rent-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .875rem;
+    margin: 1rem 0;
+    max-width: 52ch;
+  }
+  .rent-table th {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .7rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    padding: .5rem .75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .rent-table td {
+    padding: .45rem .75rem;
+    border-bottom: 1px solid var(--bg2);
+    font-variant-numeric: tabular-nums;
+  }
+  .rent-table tr:last-child td { border-bottom: none; }
+  .rent-table td:first-child { color: var(--muted); }
+
+  /* ── action flow ─────────────────────────────────────────────────── */
+  .flow {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1rem 0;
+    max-width: 52ch;
+  }
+  .flow-step {
+    display: flex;
+    align-items: flex-start;
+    gap: .85rem;
+    padding: .7rem 1rem;
+    background: var(--panel);
+    border-radius: 6px;
+    font-size: .9rem;
+    position: relative;
+  }
+  .flow-step::before {
+    content: '';
+    position: absolute;
+    left: 1.38rem;
+    top: 100%;
+    width: 2px;
+    height: .5rem;
+    background: var(--border);
+  }
+  .flow-step:last-child::before { display: none; }
+  .flow-icon {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: .7rem;
+    background: var(--accent);
+    color: #fff;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: .05rem;
+  }
+
+  /* ── color token chips ───────────────────────────────────────────── */
+  .color-chip {
+    display: inline-block;
+    width: .9em;
+    height: .9em;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: .25em;
+    border: 1px solid rgba(255,255,255,.15);
+  }
+
+  /* ── mobile ──────────────────────────────────────────────────────── */
+  @media (max-width: 700px) {
+    .sidebar { display: none; }
+    .content { padding-inline: 1.25rem; }
+    .page-header h1 { font-size: 1.9rem; }
+    .square-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+
+<div class="shell">
+  <!-- ── Sidebar nav ── -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">MONOPOLY</div>
+    <div class="sidebar-sub">Custom Stake Edition</div>
+    <div class="nav-section">Getting Started</div>
+    <nav>
+      <a href="#setup">Setup Screen</a>
+      <a href="#board">The Board</a>
+      <a href="#turn">Your Turn</a>
+    </nav>
+    <div class="nav-section">Properties</div>
+    <nav>
+      <a href="#buying">Buying &amp; Auctions</a>
+      <a href="#rent">Collecting Rent</a>
+      <a href="#building">Houses &amp; Hotels</a>
+      <a href="#mortgage">Mortgaging</a>
+    </nav>
+    <div class="nav-section">Other Rules</div>
+    <nav>
+      <a href="#jail">Jail</a>
+      <a href="#cards">Chance &amp; Community</a>
+      <a href="#trading">Trading</a>
+      <a href="#bankruptcy">Bankruptcy</a>
+    </nav>
+    <div class="nav-section">Advanced</div>
+    <nav>
+      <a href="#bots">Bot Players</a>
+      <a href="#winning">Winning</a>
+      <a href="#keyboard">Keyboard Reference</a>
+    </nav>
+  </aside>
+
+  <!-- ── Main content ── -->
+  <main class="content">
+    <header class="page-header">
+      <div class="eyebrow">Player Guide</div>
+      <h1>MONOPOLY<br>OLIGARCHY</h1>
+      <p class="subtitle">Everything you need to play the Custom Stake Edition — from setup to the final foreclosure.</p>
+    </header>
+
+    <!-- ═══ SETUP ═══ -->
+    <section class="section" id="setup">
+      <h2><span class="num">1</span>Setup Screen</h2>
+      <p>When you launch the game you land on the setup flow. There are two screens.</p>
+
+      <h3>Player Count</h3>
+      <p>Click a number button — or press <kbd>2</kbd> through <kbd>6</kbd> — to choose how many players will compete. The game supports 2 to 6 players.</p>
+
+      <h3>Player Details</h3>
+      <p>Each row represents one seat. Fill in a name, set a starting cash amount, and choose Human or Bot.</p>
+      <dl class="kv">
+        <dt>Name</dt>       <dd>Up to 16 characters. Used on the HUD and in event messages.</dd>
+        <dt>Starting Cash</dt><dd>Any positive whole number. The standard game uses $1,500, but this edition lets you change it freely — try $500 for a brutal scramble or $5,000 for a leisurely build-out.</dd>
+        <dt>Type</dt>       <dd>Human (you control) or Bot (AI plays automatically). Toggle the button to switch. A lit green button means Bot.</dd>
+      </dl>
+      <div class="callout">
+        <strong>Navigation</strong>
+        Press <kbd>Tab</kbd> to move between fields, <kbd>Shift+Tab</kbd> to go back. Press <kbd>Enter</kbd> to advance — or to start the game from the last field once all rows are valid.
+      </div>
+      <p>Click <strong>Start Game</strong> when every player has a name and a positive cash amount. Click <strong>Back</strong> to return to the player-count screen.</p>
+    </section>
+
+    <!-- ═══ BOARD ═══ -->
+    <section class="section" id="board">
+      <h2><span class="num">2</span>The Board</h2>
+      <p>The board has 40 squares arranged in a loop. Players start on and travel past <strong>Go</strong> in one direction (clockwise). Here is what each type of square does when you land on it.</p>
+
+      <div class="square-grid">
+        <div class="square-card">
+          <div class="sq-label">Corner</div>
+          <div class="sq-name">Go</div>
+          <div class="sq-desc">Collect $200 every time you pass or land here.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">Corner</div>
+          <div class="sq-name">Jail (Just Visiting)</div>
+          <div class="sq-desc">Nothing happens when you land here. You are just visiting.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">Corner</div>
+          <div class="sq-name">Free Parking</div>
+          <div class="sq-desc">Nothing happens. A free rest stop.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">Corner</div>
+          <div class="sq-name">Go to Jail</div>
+          <div class="sq-desc">Move directly to Jail. Do not collect $200.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">22 squares</div>
+          <div class="sq-name">Color Properties</div>
+          <div class="sq-desc">Buy it, build on it, collect rent. The core of the game.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">4 squares</div>
+          <div class="sq-name">Railroads</div>
+          <div class="sq-desc">Rent scales with how many railroads you own: $25 / $50 / $100 / $200.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">2 squares</div>
+          <div class="sq-name">Utilities</div>
+          <div class="sq-desc">Rent is 4× the dice roll (one utility) or 10× the dice roll (both).</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">8 squares</div>
+          <div class="sq-name">Chance</div>
+          <div class="sq-desc">Draw a card. Could be a cash reward, a penalty, a move, or a Jail card.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">6 squares</div>
+          <div class="sq-name">Community Chest</div>
+          <div class="sq-desc">Draw a card. Typically cash or a move instruction.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">Tax</div>
+          <div class="sq-name">Income Tax</div>
+          <div class="sq-desc">Pay $200 to the bank.</div>
+        </div>
+        <div class="square-card">
+          <div class="sq-label">Tax</div>
+          <div class="sq-name">Luxury Tax</div>
+          <div class="sq-desc">Pay $75 to the bank.</div>
+        </div>
+      </div>
+
+      <h3>Color Groups</h3>
+      <p>The 22 color properties are divided into eight groups. Owning every property in a group gives you a <strong>monopoly</strong> on that color, which doubles base rent and lets you build houses and hotels.</p>
+      <div class="square-grid" style="grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));">
+        <div class="square-card"><div class="sq-name"><span class="color-chip" style="background:#6B3FA0"></span>Purple</div><div class="sq-desc">2 lots</div></div>
+        <div class="square-card"><div class="sq-name"><span class="color-chip" style="background:#39AFDA"></span>Light Blue</div><div class="sq-desc">3 lots</div></div>
+        <div class="square-card"><div class="sq-name"><span class="color-chip" style="background:#D93A96"></span>Pink</div><div class="sq-desc">3 lots</div></div>
+        <div class="square-card"><div class="sq-name"><span class="color-chip" style="background:#E05C26"></span>Orange</div><div class="sq-desc">3 lots</div></div>
+        <div class="square-card"><div class="sq-name"><span class="color-chip" style="background:#D62828"></span>Red</div><div class="sq-desc">3 lots</div></div>
+        <div class="square-card"><div class="sq-name"><span class="color-chip" style="background:#F0A730"></span>Yellow</div><div class="sq-desc">3 lots</div></div>
+        <div class="square-card"><div class="sq-name"><span class="color-chip" style="background:#2C8C3C"></span>Green</div><div class="sq-desc">3 lots</div></div>
+        <div class="square-card"><div class="sq-name"><span class="color-chip" style="background:#1E3A6E"></span>Dark Blue</div><div class="sq-desc">2 lots</div></div>
+      </div>
+    </section>
+
+    <!-- ═══ YOUR TURN ═══ -->
+    <section class="section" id="turn">
+      <h2><span class="num">3</span>Your Turn</h2>
+      <p>Turns follow a fixed sequence. The active player is shown in the top-left of the HUD along with their cash, property count, and position.</p>
+
+      <div class="flow">
+        <div class="flow-step">
+          <span class="flow-icon">1</span>
+          <div><strong>Roll the Dice</strong> — Click <em>Roll Dice</em> or press <kbd>R</kbd>. Two six-sided dice determine how many squares you move.</div>
+        </div>
+        <div class="flow-step">
+          <span class="flow-icon">2</span>
+          <div><strong>Move your token</strong> — Your piece travels the board. If you pass Go, you collect $200 immediately.</div>
+        </div>
+        <div class="flow-step">
+          <span class="flow-icon">3</span>
+          <div><strong>Land action</strong> — The game prompts you depending on what square you landed on (see sections below).</div>
+        </div>
+        <div class="flow-step">
+          <span class="flow-icon">4</span>
+          <div><strong>Player actions</strong> — After any landing is resolved, you may Build, Mortgage, or Trade before ending your turn.</div>
+        </div>
+        <div class="flow-step">
+          <span class="flow-icon">5</span>
+          <div><strong>End Turn</strong> — Click <em>End Turn</em> or press <kbd>E</kbd>. Play passes to the next player.</div>
+        </div>
+      </div>
+
+      <div class="callout warn">
+        <strong>Doubles</strong>
+        Rolling doubles lets you take an extra turn immediately. Roll doubles three times in a row and you go directly to Jail.
+      </div>
+    </section>
+
+    <!-- ═══ BUYING ═══ -->
+    <section class="section" id="buying">
+      <h2><span class="num">4</span>Buying &amp; Auctions</h2>
+
+      <h3>Buying a Property</h3>
+      <p>When you land on an unowned property, the game asks: <em>Buy it for $X?</em></p>
+      <ul>
+        <li><strong>Buy</strong> — pay the listed price, add the deed to your portfolio.</li>
+        <li><strong>Auction</strong> — send the property to an open auction (see below).</li>
+      </ul>
+      <p>You cannot buy a property you cannot afford. If your cash is below the price, only the Auction option is available.</p>
+
+      <h3>Auctions</h3>
+      <p>An auction starts whenever a player declines to buy a property at face value, or when a card sends a property to auction directly. Every player — including the one who declined — may bid.</p>
+      <ul>
+        <li>Bids rise in $1 increments. Players take turns in seat order.</li>
+        <li>A player who cannot afford the next minimum bid is dropped automatically.</li>
+        <li>When only one bidder remains with a standing bid, they win the property at their bid price.</li>
+        <li>If all players pass without bidding, the property returns to the bank unsold.</li>
+      </ul>
+      <div class="callout">
+        <strong>Strategy note</strong>
+        Auctions let you acquire properties for less than face value — or force rivals to overpay. Even if you don't want the property, pushing the bid up burns your opponent's cash.
+      </div>
+    </section>
+
+    <!-- ═══ RENT ═══ -->
+    <section class="section" id="rent">
+      <h2><span class="num">5</span>Collecting Rent</h2>
+      <p>When you land on a property owned by another player, you pay rent. The amount depends on the property type and what has been built.</p>
+
+      <h3>Color Properties</h3>
+      <table class="rent-table">
+        <thead><tr><th>Situation</th><th>Rent charged</th></tr></thead>
+        <tbody>
+          <tr><td>Unimproved, owner has partial group</td><td>Base rent from the deed</td></tr>
+          <tr><td>Unimproved monopoly (all lots owned)</td><td>2× base rent</td></tr>
+          <tr><td>1 house</td><td>Rent table row 2</td></tr>
+          <tr><td>2 houses</td><td>Rent table row 3</td></tr>
+          <tr><td>3 houses</td><td>Rent table row 4</td></tr>
+          <tr><td>4 houses</td><td>Rent table row 5</td></tr>
+          <tr><td>Hotel</td><td>Rent table row 6 (highest)</td></tr>
+        </tbody>
+      </table>
+      <p>A <strong>mortgaged</strong> lot collects no rent at all. Mortgaging one lot in a group does not affect the rent of the other lots in that group — they still charge monopoly or improved rates.</p>
+
+      <h3>Railroads</h3>
+      <table class="rent-table">
+        <thead><tr><th>Railroads owned</th><th>Rent</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>$25</td></tr>
+          <tr><td>2</td><td>$50</td></tr>
+          <tr><td>3</td><td>$100</td></tr>
+          <tr><td>4</td><td>$200</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Utilities</h3>
+      <p>The rent multiplier is applied to the number rolled on the dice that moved you to the utility square.</p>
+      <dl class="kv">
+        <dt>1 utility</dt>  <dd>4 × dice roll</dd>
+        <dt>Both utilities</dt><dd>10 × dice roll</dd>
+      </dl>
+    </section>
+
+    <!-- ═══ BUILDING ═══ -->
+    <section class="section" id="building">
+      <h2><span class="num">6</span>Houses &amp; Hotels</h2>
+      <p>You can build on a color group only when you own every lot in that group and none of them is mortgaged.</p>
+
+      <h3>Building Houses</h3>
+      <p>Click <strong>Build</strong> (or press <kbd>B</kbd>) during your Player Actions phase to open the build screen. Select lots to add or remove houses. Building must be even — you cannot put a second house on one lot while another lot in the same group has none.</p>
+      <p>Each house costs the amount printed on the deed (varies by color group).</p>
+
+      <h3>Upgrading to a Hotel</h3>
+      <p>Once a lot has 4 houses, the next purchase replaces all four houses with a hotel. A hotel earns the highest rent on the card and costs one additional house payment. Each lot can hold at most one hotel.</p>
+
+      <h3>Selling Improvements</h3>
+      <p>In the build screen you can also sell houses back to the bank for half their purchase price. Selling must also be done evenly across the group.</p>
+
+      <div class="callout warn">
+        <strong>Tip</strong>
+        The orange and red groups (landing frequently due to their distance from Jail) tend to generate the best return on investment.
+      </div>
+    </section>
+
+    <!-- ═══ MORTGAGE ═══ -->
+    <section class="section" id="mortgage">
+      <h2><span class="num">7</span>Mortgaging</h2>
+      <p>When you need emergency cash, you can mortgage properties to the bank. Click <strong>Mortgage</strong> (or press <kbd>M</kbd>) during your Player Actions phase.</p>
+      <ul>
+        <li>You receive <strong>half the property's face value</strong> immediately.</li>
+        <li>A mortgaged property collects <strong>no rent</strong>.</li>
+        <li>You must sell all houses and hotels on a color group before you can mortgage any lot in it.</li>
+        <li>To un-mortgage a property, pay the face value back plus 10% interest.</li>
+      </ul>
+      <div class="callout danger">
+        <strong>Important</strong>
+        You cannot build on a group if any lot in it is mortgaged. Un-mortgage it first.
+      </div>
+    </section>
+
+    <!-- ═══ JAIL ═══ -->
+    <section class="section" id="jail">
+      <h2><span class="num">8</span>Jail</h2>
+      <p>You go to Jail in three ways: landing on <em>Go to Jail</em>, rolling doubles three times in a row, or drawing a card that sends you there. You move directly to Jail and do not collect $200 for passing Go.</p>
+
+      <h3>Getting Out</h3>
+      <p>At the start of your turn while in Jail, you are offered three options:</p>
+      <ul>
+        <li><strong>Pay the Fine — $50.</strong> Pay immediately and roll normally.</li>
+        <li><strong>Use a Jail Card.</strong> Spend a <em>Get Out of Jail Free</em> card if you have one.</li>
+        <li><strong>Roll for Doubles.</strong> Roll the dice — if you get doubles, you move that many spaces and play normally. No doubles means you stay in Jail (your turn ends, no movement). On your third failed attempt, you must pay $50 and then move.</li>
+      </ul>
+      <div class="callout">
+        <strong>Jail as shelter</strong>
+        Late in the game, with the board loaded with hotels, staying in Jail a few turns can be tactically smart — you collect rent from visitors but avoid landing on expensive squares yourself.
+      </div>
+    </section>
+
+    <!-- ═══ CARDS ═══ -->
+    <section class="section" id="cards">
+      <h2><span class="num">9</span>Chance &amp; Community Chest</h2>
+      <p>Landing on one of these squares draws the top card from the corresponding shuffled deck. The deck is reshuffled once exhausted.</p>
+
+      <h3>Typical Card Effects</h3>
+      <ul>
+        <li><strong>Collect / Pay cash</strong> — straightforward bank transactions.</li>
+        <li><strong>Advance to a square</strong> — move forward (or occasionally backward) to a named location. Passing Go collects $200 unless the card says otherwise.</li>
+        <li><strong>Advance to the nearest Railroad / Utility</strong> — and pay double rent if someone owns it.</li>
+        <li><strong>Repairs on your properties</strong> — pay a set amount per house and per hotel you own.</li>
+        <li><strong>Get Out of Jail Free</strong> — keep this card and use it whenever you need it, or trade it to another player.</li>
+        <li><strong>Go to Jail</strong> — move directly to Jail, do not pass Go.</li>
+      </ul>
+
+      <p>The game always shows you the full card text before asking you to dismiss it. Press <kbd>Space</kbd> or click OK to acknowledge and continue.</p>
+    </section>
+
+    <!-- ═══ TRADING ═══ -->
+    <section class="section" id="trading">
+      <h2><span class="num">10</span>Trading</h2>
+      <p>During your Player Actions phase, click <strong>Trade</strong> (or press <kbd>T</kbd>) to open the trade screen. You can exchange any combination of:</p>
+      <ul>
+        <li>Properties (you cannot trade buildings — sell them first)</li>
+        <li>Cash</li>
+        <li>Get Out of Jail Free cards</li>
+      </ul>
+      <p>Select the other player, set what each side offers, and send the proposal. The other player may accept or decline. Trades are final once accepted.</p>
+      <div class="callout">
+        <strong>Completing a monopoly</strong>
+        Trading is the fastest way to break stalemates. Giving up a property you cannot use to complete someone else's monopoly, in exchange for cash or a property you need, often unlocks the whole game.
+      </div>
+    </section>
+
+    <!-- ═══ BANKRUPTCY ═══ -->
+    <section class="section" id="bankruptcy">
+      <h2><span class="num">11</span>Bankruptcy</h2>
+      <p>You go bankrupt when you owe more than you can raise — after selling all your houses, hotels, and mortgaging every property you own — and still cannot cover the debt.</p>
+      <ul>
+        <li>If you go bankrupt to <strong>another player</strong>, all your assets (including mortgaged properties and any Jail cards) transfer to that player. They pay the 10% un-mortgage fee later when they choose to un-mortgage.</li>
+        <li>If you go bankrupt to <strong>the bank</strong> (from a tax or card), all your properties return to the bank and go back up for auction.</li>
+      </ul>
+      <p>A bankrupt player is eliminated. The game continues until only one player remains.</p>
+    </section>
+
+    <!-- ═══ BOTS ═══ -->
+    <section class="section" id="bots">
+      <h2><span class="num">12</span>Bot Players</h2>
+      <p>Bots are fully automated players — they roll, buy, bid, build, mortgage, and end their turns without any human input. You can mix human and bot players in any combination.</p>
+
+      <h3>How Bots Decide</h3>
+      <dl class="kv">
+        <dt>Buy?</dt>      <dd>Buy if cash after purchase stays above $200, and they already own a group member or the price is ≤ 2× the cash floor.</dd>
+        <dt>Auction bid</dt><dd>Bid up to 110% of face value if the purchase completes a monopoly, otherwise up to face value — but never below a $200 cash reserve.</dd>
+        <dt>Build</dt>     <dd>Build when cash exceeds a dynamic reserve (at least $300, or 30% of current cash).</dd>
+        <dt>Mortgage</dt>  <dd>Mortgage when cash drops below $150. Un-mortgage when cash is above $800.</dd>
+        <dt>Jail</dt>      <dd>Always pay the fine immediately to keep the game moving.</dd>
+      </dl>
+
+      <h3>Speed</h3>
+      <p>Bots act on a 700 ms timer between actions, so you can follow what's happening. A full bot-vs-bot game typically resolves in a few minutes.</p>
+
+      <div class="callout">
+        <strong>Tip</strong>
+        Add one bot opponent if you want a solo practice game. Use all bots to watch a game play itself.
+      </div>
+    </section>
+
+    <!-- ═══ WINNING ═══ -->
+    <section class="section" id="winning">
+      <h2><span class="num">13</span>Winning</h2>
+      <p>The last player standing wins. There is no timer and no score — you win by outlasting everyone else through a combination of property acquisition, rent collection, and cash management.</p>
+      <p>The game displays a Game Over screen showing the winner's name and final holdings.</p>
+    </section>
+
+    <!-- ═══ KEYBOARD ═══ -->
+    <section class="section" id="keyboard">
+      <h2><span class="num">14</span>Keyboard Reference</h2>
+      <dl class="kv">
+        <dt><kbd>R</kbd></dt>        <dd>Roll Dice</dd>
+        <dt><kbd>E</kbd></dt>        <dd>End Turn</dd>
+        <dt><kbd>B</kbd></dt>        <dd>Open Build screen</dd>
+        <dt><kbd>M</kbd></dt>        <dd>Open Mortgage screen</dd>
+        <dt><kbd>T</kbd></dt>        <dd>Open Trade screen</dd>
+        <dt><kbd>Space</kbd></dt>    <dd>Dismiss a card / confirm a prompt</dd>
+        <dt><kbd>2</kbd>–<kbd>6</kbd></dt><dd>Select player count (Setup)</dd>
+        <dt><kbd>Tab</kbd></dt>      <dd>Next field (Setup details)</dd>
+        <dt><kbd>Shift+Tab</kbd></dt><dd>Previous field (Setup details)</dd>
+        <dt><kbd>Enter</kbd></dt>    <dd>Confirm field / Start game</dd>
+        <dt><kbd>Esc</kbd></dt>      <dd>Back (Setup details)</dd>
+      </dl>
+    </section>
+  </main>
+</div>
+
+<script>
+  // Highlight the active sidebar link on scroll
+  const sections = document.querySelectorAll('.section');
+  const links = document.querySelectorAll('.sidebar nav a');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        links.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => io.observe(s));
+</script>

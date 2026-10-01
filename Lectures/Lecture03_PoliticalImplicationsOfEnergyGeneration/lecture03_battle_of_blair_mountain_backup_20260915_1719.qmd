@@ -1,0 +1,46 @@
+---
+title: "Lecture 3 — Political implications of energy generation"
+subtitle: "PHY199-RAP · Energy in the 21st Century"
+author: "Dr. Salvatore Rappoccio"
+date: "2026-09-07"
+material: ""
+assignment: ""
+format:
+  # PowerPoint output (source of truth). Path assumes a Lectures/LectureNN/ location.
+  pptx:
+    reference-doc: ../../template/UB-template.pptx
+    slide-level: 2
+  revealjs:
+    theme: [default, ub.scss]
+    slide-number: true
+    center: false
+    progress: false
+    math: katex
+    transition: slide
+    embed-resources: true
+    template-partials:
+      - title-slide.html
+    # Eager-load images so they don't show blank in preview/PDF (project gotcha).
+    include-after-body:
+      text: |
+        <script>
+        window.addEventListener('load', function () {
+          document.querySelectorAll('img[data-src]').forEach(function (i) {
+            var s = i.getAttribute('data-src');
+            if (s && !i.getAttribute('src')) { i.setAttribute('src', s); }
+          });
+        });
+        </script>
+---
+
+<!--
+QUARRY NOTE (for Sal): this .qmd mirrors the 24 slides Claude appended to
+lecture03_war_of_the_currents_acdc.pptx (the built pptx is the source of truth;
+this is your editable draft). Section = War of the Currents (AC vs DC), 1882-1896.
+Images fetched to images/: edison.jpg, westinghouse.jpg, tesla.jpg, electric_chair.jpg
+(all public domain). Missing figures are marked "FIGURE TO ADD" - re-run
+fetch_lecture_media.py in discovery mode on "War of the currents" for exact titles.
+The fetched File:Kemmler.jpg is NOT William Kemmler (it's a modern musician) - do not use.
+-->
+
+# The War of the Currents {.divider}

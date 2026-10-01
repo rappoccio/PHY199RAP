@@ -1,0 +1,55 @@
+---
+title: "Lecture 4 — Political implications of energy generation"
+subtitle: "PHY199-RAP · Energy in the 21st Century"
+author: "Dr. Salvatore Rappoccio"
+date: "2026-09-14"
+material: "Lecture notes on the [death cost of electricity generation](https://ourworldindata.org/grapher/death-rates-from-energy-production-per-twh), [public health costs of carbon emissions](https://www.un.org/en/climatechange/science/climate-issues/health). *Skill taught: time management.*"
+assignment: "Quiz on material from week 3."
+format:
+  # PowerPoint output (source of truth). Path assumes a Lectures/LectureNN/ location.
+  pptx:
+    reference-doc: ../../template/UB-template.pptx
+    slide-level: 2
+  revealjs:
+    theme: [default, ub.scss]
+    slide-number: true
+    center: false
+    progress: false
+    math: katex
+    transition: slide
+    embed-resources: true
+    template-partials:
+      - title-slide.html
+---
+
+## First point
+
+- One idea per slide; keep bullets short
+- **Bold** the key term, *italics* for emphasis
+- The talk carries the detail — the slide is the anchor
+
+::: notes
+Speaker notes live here. They stay off the slide and show in presenter view
+(press `S` while presenting).
+:::
+
+## A formula
+
+Inline math like $E = mc^2$, or a display equation:
+
+$$
+\text{LCOE} = \frac{\text{lifetime costs}}{\text{lifetime energy produced}}
+$$
+
+## A data table
+
+| Quantity | Value |
+|----------|:-----:|
+| Example  |  42   |
+| Another  |   7   |
+
+Cite a source for any figures you present.
+
+## Takeaway
+
+The one thing you want them to remember.

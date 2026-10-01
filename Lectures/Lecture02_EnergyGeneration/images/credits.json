@@ -1,0 +1,68 @@
+[
+  {
+    "file": "oersted.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%C3%98rsted.jpg",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Christoffer Wilhelm Eckersberg — Public domain. Source: https://commons.wikimedia.org/wiki/File:%C3%98rsted.jpg",
+    "alt": "Portrait of the Danish physicist Hans Christian Ørsted, who discovered in 1820 that an electric current deflects a compass needle.",
+    "caption": "Hans Christian Ørsted (1777–1851). Public domain.",
+    "mime": "image/jpeg",
+    "free": true
+  },
+  {
+    "file": "faraday.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:M_Faraday_Th_Phillips_oil_1842.jpg",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Thomas Phillips — Public domain. Source: https://commons.wikimedia.org/wiki/File:M_Faraday_Th_Phillips_oil_1842.jpg",
+    "alt": "Painted portrait of Michael Faraday, who discovered electromagnetic induction in 1831.",
+    "caption": "Michael Faraday (1791–1867), portrait by Thomas Phillips, 1842. Public domain.",
+    "mime": "image/jpeg",
+    "free": true
+  },
+  {
+    "file": "binding_energy_curve.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Binding_energy_curve_-_common_isotopes.svg",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "Fastfission — Public domain. Source: https://commons.wikimedia.org/wiki/File:Binding_energy_curve_-_common_isotopes.svg",
+    "alt": "Curve of nuclear binding energy per nucleon versus mass number, peaking at iron-56; fusion of light nuclei and fission of heavy nuclei both move toward the peak.",
+    "caption": "Nuclear binding energy per nucleon. Iron-56 sits at the peak — fusion and fission both release energy by moving toward it. Public domain.",
+    "mime": "image/svg+xml",
+    "free": true
+  },
+  {
+    "file": "sun.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+    "license": "Public domain",
+    "license_url": "",
+    "attribution": "NASA/SDO (AIA) — Public domain. Source: https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+    "alt": "The Sun imaged in ultraviolet light by NASA's Solar Dynamics Observatory, showing the churning surface of the fusion-powered star.",
+    "caption": "The Sun (NASA/SDO). Public domain (U.S. federal work) — CORROBORATE per course source rule (e.g. ESA/independent solar-observatory image).",
+    "mime": "image/jpeg",
+    "free": true
+  },
+  {
+    "file": "fission_chain.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nuclear_fission_chain_reaction.svg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "MikeRun — CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Nuclear_fission_chain_reaction.svg",
+    "alt": "Diagram of a nuclear fission chain reaction: a neutron splits a uranium nucleus into fragments and additional neutrons, which split further nuclei.",
+    "caption": "Fission chain reaction (schematic). Check license; redraw as a cartoon if flagged.",
+    "mime": "image/svg+xml",
+    "free": true
+  },
+  {
+    "file": "transmission_towers.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Electric_transmission_lines.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "Nixdorf — CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Electric_transmission_lines.jpg",
+    "alt": "High-voltage electricity transmission towers carrying power lines across open landscape.",
+    "caption": "High-voltage transmission lines — the grid moves power at high voltage to cut resistive losses. [Verify title in discovery mode if not found.]",
+    "mime": "image/jpeg",
+    "free": true
+  }
+]

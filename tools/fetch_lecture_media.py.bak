@@ -1,0 +1,438 @@
+#!/usr/bin/env python3
+"""
+fetch_lecture_media.py
+======================
+Download Wikimedia Commons / Wikipedia media (and, optionally, other direct URLs)
+for a PHY199RAP lecture, capturing the LICENSE, a ready-to-cite ATTRIBUTION string,
+and ALT TEXT for every file, into a per-lecture images/ folder.
+
+WHY THIS SCRIPT EXISTS
+----------------------
+Claude's Cowork sandbox (and the mounted-folder VM) have no route to Wikimedia's
+servers, so Claude can prepare the manifest + attributions + alt text but cannot pull
+the image bytes. This script runs in YOUR OWN terminal, which has normal internet,
+and does the download for you. Standard library only -- no `pip install` needed.
+
+USAGE
+-----
+  # Download everything named in a manifest into ./images (next to the lecture .qmd):
+  python3 fetch_lecture_media.py manifest.json
+
+  # Choose the output folder and cap the long edge at 1600 px (good for slides):
+  python3 fetch_lecture_media.py manifest.json --out images --max-width 1600
+
+  # See what a Wikipedia ARTICLE offers, with each image's license, before committing:
+  python3 fetch_lecture_media.py --from-article "Utica Shale"
+
+  # Re-run safely: already-downloaded files are skipped unless you pass --force.
+  python3 fetch_lecture_media.py manifest.json --force
+  python3 fetch_lecture_media.py manifest.json --dry-run   # plan only, no downloads
+
+MANIFEST FORMATS (auto-detected by extension)
+---------------------------------------------
+  *.json : a JSON list of entry objects (see sample_manifest.json)
+  *.txt  : one Commons/Wikipedia file title or URL per line
+           (blank lines and lines starting with # are ignored)
+
+JSON ENTRY FIELDS
+-----------------
+  file    : Commons file title ("File:Foo.jpg") OR a commons/wikipedia file-page URL
+  url     : a DIRECT media URL for a non-Wikimedia source (skips the API); needs `credit`
+  name    : desired local filename (otherwise derived from the source name)
+  alt     : alt text for this image (recorded in CREDITS.md and credits.json)
+  caption : the on-slide caption (recorded too)
+  credit  : manual attribution string -- REQUIRED for `url` (non-Wikimedia) entries
+
+OUTPUTS (into the --out folder)
+-------------------------------
+  <image files>
+  CREDITS.md    : human-readable, per image -- filename, source, license, attribution, alt, caption
+  credits.json  : the same, machine-readable (handy for scripting the .qmd alt text)
+
+Non-free or license-uncertain files are NEVER downloaded silently: they are reported
+with a "!! NON-FREE / CHECK" marker and skipped unless you pass --allow-nonfree.
+
+Author: prepared for PHY199-RAP (Energy in the 21st Century). Public domain / CC0.
+"""
+
+import argparse
+import html
+import json
+import os
+import re
+import sys
+import time
+import urllib.parse
+import urllib.request
+
+# Wikimedia asks all API clients to send a descriptive User-Agent with contact info.
+# https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
+USER_AGENT = ("PHY199RAP-lecture-media/1.1 "
+              "(University at Buffalo seminar; contact: srappoc@buffalo.edu)")
+
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+ENWIKI_API = "https://en.wikipedia.org/w/api.php"
+
+# License short-names / machine-names that mean "NOT freely reusable" -- trip the flag.
+NONFREE_PAT = re.compile(
+    r"(non[- ]?free|fair[- ]?use|all rights reserved|screenshot|"
+    r"copyright(?!ed:\s*false)|©)", re.I)
+FREE_MACHINE_PREFIXES = ("cc-", "cc0", "pd", "publicdomain", "no restrictions")
+
+POLITE_DELAY = 0.5  # seconds between API/download calls -- be a good citizen
+
+
+# --------------------------------------------------------------------------- #
+# small helpers
+# --------------------------------------------------------------------------- #
+def _req(url):
+    return urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+
+
+def api_get(endpoint, params, tries=3):
+    """GET a MediaWiki API endpoint, returning parsed JSON (with simple backoff)."""
+    params = dict(params, format="json")
+    url = endpoint + "?" + urllib.parse.urlencode(params)
+    last = None
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(_req(url), timeout=30) as r:
+                return json.load(r)
+        except Exception as e:  # noqa: BLE001
+            last = e
+            time.sleep(POLITE_DELAY * (i + 1) * 2)
+    raise RuntimeError(f"API request failed after {tries} tries: {last}\n  {url}")
+
+
+def strip_html(value):
+    """extmetadata values are HTML fragments; reduce to clean single-line text."""
+    if not value:
+        return ""
+    text = re.sub(r"<[^>]+>", " ", value)
+    text = html.unescape(text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def normalize_title(entry_file):
+    """Accept a bare 'File:Foo.jpg', a 'Foo.jpg', or a full file-page URL."""
+    s = entry_file.strip()
+    if s.startswith("http"):
+        path = urllib.parse.urlparse(s).path
+        s = urllib.parse.unquote(path.rsplit("/", 1)[-1])
+    if not s.lower().startswith("file:"):
+        s = "File:" + s
+    return s
+
+
+def safe_filename(name):
+    name = urllib.parse.unquote(name)
+    name = name.replace("File:", "").replace("file:", "")
+    name = name.replace(" ", "_")
+    name = re.sub(r"[^A-Za-z0-9._-]", "_", name)
+    return re.sub(r"_+", "_", name).strip("_") or "media"
+
+
+def build_attribution(meta):
+    """Compose a citation line from extmetadata fields."""
+    artist = strip_html(meta.get("artist"))
+    lic = meta.get("license_short") or meta.get("license_machine") or "see source"
+    src = meta.get("descriptionurl", "")
+    bits = []
+    if artist:
+        bits.append(artist)
+    bits.append(lic)
+    line = " — ".join(bits) if bits else lic
+    if src:
+        line += f". Source: {src}"
+    return line
+
+
+# --------------------------------------------------------------------------- #
+# Wikimedia lookups
+# --------------------------------------------------------------------------- #
+def imageinfo(endpoint, title, max_width):
+    iiprop = "url|size|mime|extmetadata"
+    params = {
+        "action": "query", "titles": title, "redirects": "1",
+        "prop": "imageinfo", "iiprop": iiprop,
+    }
+    if max_width:
+        params["iiurlwidth"] = str(max_width)
+    data = api_get(endpoint, params)
+    pages = data.get("query", {}).get("pages", {})
+    for _pid, pg in pages.items():
+        if "imageinfo" not in pg:
+            return None
+        ii = pg["imageinfo"][0]
+        em = ii.get("extmetadata", {})
+
+        def emv(k):
+            return em.get(k, {}).get("value", "")
+
+        meta = {
+            "title": pg.get("title", title),
+            "original_url": ii.get("url", ""),
+            "thumb_url": ii.get("thumburl", ""),
+            "thumb_width": ii.get("thumbwidth"),
+            "descriptionurl": ii.get("descriptionurl", ""),
+            "mime": ii.get("mime", ""),
+            "size": ii.get("size"),
+            "width": ii.get("width"),
+            "height": ii.get("height"),
+            "license_short": strip_html(emv("LicenseShortName")),
+            "license_machine": strip_html(emv("License")),
+            "license_url": strip_html(emv("LicenseUrl")),
+            "artist": emv("Artist"),
+            "credit": strip_html(emv("Credit")),
+            "usage_terms": strip_html(emv("UsageTerms")),
+            "attribution_required": strip_html(emv("AttributionRequired")),
+            "copyrighted": strip_html(emv("Copyrighted")),
+        }
+        return meta
+    return None
+
+
+def is_free(meta, host):
+    machine = (meta.get("license_machine") or "").lower()
+    short = (meta.get("license_short") or "").lower()
+    if machine.startswith(FREE_MACHINE_PREFIXES):
+        return True
+    if NONFREE_PAT.search(short) or NONFREE_PAT.search(meta.get("usage_terms", "")):
+        return False
+    if "public domain" in short or short.startswith("cc"):
+        return True
+    # Commons only accepts free content; treat an unknown-license Commons file as free.
+    if host == "commons" and machine:
+        return True
+    return False if host == "enwiki" else bool(machine)
+
+
+def resolve_wikimedia(title, max_width):
+    """Look on Commons first, then English Wikipedia (where non-free files live)."""
+    meta = imageinfo(COMMONS_API, title, max_width)
+    host = "commons"
+    if meta is None:
+        time.sleep(POLITE_DELAY)
+        meta = imageinfo(ENWIKI_API, title, max_width)
+        host = "enwiki"
+    if meta is None:
+        return None
+    meta["host"] = host
+    meta["free"] = is_free(meta, host)
+    return meta
+
+
+def choose_download_url(meta, max_width):
+    """Prefer a scaled thumb for big rasters; keep originals for gif/svg."""
+    mime = meta.get("mime", "")
+    if mime in ("image/gif", "image/svg+xml") or not max_width:
+        return meta["original_url"]
+    if meta.get("thumb_url") and meta.get("width") and meta["width"] > max_width:
+        return meta["thumb_url"]
+    return meta["original_url"]
+
+
+def download(url, dest):
+    with urllib.request.urlopen(_req(url), timeout=60) as r, open(dest, "wb") as f:
+        while True:
+            chunk = r.read(65536)
+            if not chunk:
+                break
+            f.write(chunk)
+    return os.path.getsize(dest)
+
+
+# --------------------------------------------------------------------------- #
+# manifest loading
+# --------------------------------------------------------------------------- #
+def load_manifest(path):
+    if path.lower().endswith(".json"):
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data, list):
+            raise SystemExit("JSON manifest must be a list of entry objects.")
+        return data
+    entries = []
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            entries.append({"file": line})
+    return entries
+
+
+# --------------------------------------------------------------------------- #
+# main actions
+# --------------------------------------------------------------------------- #
+def do_from_article(article, max_width):
+    print(f"# Images used on Wikipedia article: {article}\n")
+    data = api_get(ENWIKI_API, {
+        "action": "query", "titles": article,
+        "generator": "images", "gimlimit": "200",
+        "prop": "info",
+    })
+    pages = data.get("query", {}).get("pages", {})
+    titles = sorted(pg["title"] for pg in pages.values() if pg.get("title"))
+    if not titles:
+        print("(no images found -- check the exact article title)")
+        return
+    print(f"{'FREE?':<7} {'LICENSE':<22} {'DIMENSIONS':<12} TITLE")
+    print("-" * 80)
+    for t in titles:
+        time.sleep(POLITE_DELAY)
+        try:
+            meta = resolve_wikimedia(t, max_width)
+        except Exception as e:  # noqa: BLE001
+            print(f"{'ERR':<7} {str(e)[:40]:<22} {'':<12} {t}")
+            continue
+        if not meta:
+            print(f"{'?':<7} {'(no imageinfo)':<22} {'':<12} {t}")
+            continue
+        dims = f"{meta.get('width','?')}x{meta.get('height','?')}"
+        flag = "yes" if meta["free"] else "NO"
+        print(f"{flag:<7} {(meta['license_short'] or meta['license_machine'])[:22]:<22} "
+              f"{dims:<12} {t}  [{meta['host']}]")
+    print("\nCopy the free ones you want into a manifest (file: <title>) and re-run to download.")
+
+
+def do_download(entries, out_dir, max_width, force, dry_run, allow_nonfree):
+    os.makedirs(out_dir, exist_ok=True)
+    records = []
+    warnings = []
+    for i, e in enumerate(entries, 1):
+        alt = e.get("alt", "")
+        caption = e.get("caption", "")
+
+        # -- non-Wikimedia direct URL --------------------------------------
+        if e.get("url") and not e.get("file"):
+            fname = safe_filename(e.get("name") or e["url"].rsplit("/", 1)[-1])
+            dest = os.path.join(out_dir, fname)
+            credit = e.get("credit", "")
+            if not credit:
+                warnings.append(f"[{i}] {fname}: direct URL with no 'credit' -- add attribution manually.")
+            rec = {"file": fname, "source": e["url"], "license": "(manual)",
+                   "attribution": credit, "alt": alt, "caption": caption, "free": None}
+            print(f"[{i}] {fname}  <- (direct)  {e['url']}")
+            if not dry_run and (force or not os.path.exists(dest)):
+                try:
+                    n = download(e["url"], dest)
+                    print(f"      saved {n:,} bytes")
+                except Exception as ex:  # noqa: BLE001
+                    warnings.append(f"[{i}] {fname}: download failed -- {ex}")
+            records.append(rec)
+            time.sleep(POLITE_DELAY)
+            continue
+
+        # -- Wikimedia file -------------------------------------------------
+        title = normalize_title(e["file"])
+        try:
+            meta = resolve_wikimedia(title, max_width)
+        except Exception as ex:  # noqa: BLE001
+            warnings.append(f"[{i}] {title}: lookup failed -- {ex}")
+            continue
+        if not meta:
+            warnings.append(f"[{i}] {title}: not found on Commons or en.wikipedia.")
+            continue
+
+        attribution = build_attribution(meta)
+        fname = safe_filename(e.get("name") or meta["title"])
+        dest = os.path.join(out_dir, fname)
+        free = meta["free"]
+        tag = "ok " if free else "!! NON-FREE / CHECK"
+        print(f"[{i}] {fname}  [{tag}]  {meta['license_short'] or meta['license_machine']}  ({meta['host']})")
+
+        rec = {
+            "file": fname, "source": meta["descriptionurl"],
+            "license": meta.get("license_short") or meta.get("license_machine", ""),
+            "license_url": meta.get("license_url", ""),
+            "attribution": attribution, "alt": alt, "caption": caption,
+            "mime": meta["mime"], "free": free,
+        }
+        if not free and not allow_nonfree:
+            warnings.append(f"[{i}] {fname}: NON-FREE ({meta['license_short']}) -- skipped. "
+                            f"Use a free alternative, or --allow-nonfree if you have rights.")
+            records.append(rec)
+            time.sleep(POLITE_DELAY)
+            continue
+
+        if dry_run:
+            records.append(rec)
+            time.sleep(POLITE_DELAY)
+            continue
+        if os.path.exists(dest) and not force:
+            print("      exists -- skipping (use --force to overwrite)")
+            records.append(rec)
+            continue
+        url = choose_download_url(meta, max_width)
+        try:
+            n = download(url, dest)
+            print(f"      saved {n:,} bytes  <- {url}")
+        except Exception as ex:  # noqa: BLE001
+            warnings.append(f"[{i}] {fname}: download failed -- {ex}")
+        records.append(rec)
+        time.sleep(POLITE_DELAY)
+
+    write_credits(out_dir, records)
+    print(f"\nWrote {len(records)} record(s) -> {os.path.join(out_dir, 'CREDITS.md')} "
+          f"and credits.json")
+    if warnings:
+        print("\n" + "=" * 60 + "\nWARNINGS / TO CHECK:")
+        for w in warnings:
+            print("  - " + w)
+
+
+def write_credits(out_dir, records):
+    with open(os.path.join(out_dir, "credits.json"), "w", encoding="utf-8") as f:
+        json.dump(records, f, indent=2, ensure_ascii=False)
+    lines = ["# Media credits\n",
+             "_Generated by fetch_lecture_media.py. Verify every license before publishing._\n"]
+    for r in records:
+        lines.append(f"## `{r['file']}`")
+        if r.get("free") is False:
+            lines.append("> **!! NON-FREE / CHECK — do not reuse without confirming rights.**")
+        lines.append(f"- **License:** {r.get('license','')}"
+                     + (f" ({r['license_url']})" if r.get("license_url") else ""))
+        lines.append(f"- **Attribution:** {r.get('attribution','')}")
+        if r.get("source"):
+            lines.append(f"- **Source:** {r['source']}")
+        if r.get("alt"):
+            lines.append(f"- **Alt text:** {r['alt']}")
+        if r.get("caption"):
+            lines.append(f"- **Caption:** {r['caption']}")
+        lines.append("")
+    with open(os.path.join(out_dir, "CREDITS.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+
+def main(argv=None):
+    p = argparse.ArgumentParser(description="Download lecture media with license + attribution capture.")
+    p.add_argument("manifest", nargs="?", help="manifest .json or .txt")
+    p.add_argument("--from-article", metavar="TITLE",
+                   help="list images used on a Wikipedia article (discovery mode)")
+    p.add_argument("--out", default="images", help="output folder (default: images)")
+    p.add_argument("--max-width", type=int, default=1600,
+                   help="cap the long edge in px for rasters (default 1600; 0 = originals)")
+    p.add_argument("--force", action="store_true", help="re-download existing files")
+    p.add_argument("--dry-run", action="store_true", help="plan only; no downloads")
+    p.add_argument("--allow-nonfree", action="store_true",
+                   help="download files flagged non-free (only if YOU hold the rights)")
+    args = p.parse_args(argv)
+
+    mw = args.max_width if args.max_width and args.max_width > 0 else 0
+
+    if args.from_article:
+        do_from_article(args.from_article, mw or 800)
+        return 0
+    if not args.manifest:
+        p.error("give a manifest, or use --from-article TITLE")
+    entries = load_manifest(args.manifest)
+    if not entries:
+        print("Manifest is empty.")
+        return 1
+    do_download(entries, args.out, mw, args.force, args.dry_run, args.allow_nonfree)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

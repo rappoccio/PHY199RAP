@@ -1,0 +1,50 @@
+[
+  {
+    "file": "File:Ørsted.jpg",
+    "name": "oersted.jpg",
+    "alt": "Portrait of the Danish physicist Hans Christian Ørsted, who discovered in 1820 that an electric current deflects a compass needle.",
+    "caption": "Hans Christian Ørsted (1777–1851). Public domain."
+  },
+  {
+    "file": "File:M Faraday Th Phillips oil 1842.jpg",
+    "name": "faraday.jpg",
+    "alt": "Painted portrait of Michael Faraday, who discovered electromagnetic induction in 1831.",
+    "caption": "Michael Faraday (1791–1867), portrait by Thomas Phillips, 1842. Public domain."
+  },
+  {
+    "file": "File:Faraday magnetic induction experiment.jpg",
+    "name": "faraday_ring.jpg",
+    "alt": "Michael Faraday's iron induction ring, the apparatus with which he demonstrated electromagnetic induction in 1831.",
+    "caption": "Faraday's induction ring (1831). Public domain. [Verify title in discovery mode if not found.]"
+  },
+  {
+    "file": "File:Binding energy curve - common isotopes.svg",
+    "name": "binding_energy_curve.svg",
+    "alt": "Curve of nuclear binding energy per nucleon versus mass number, peaking at iron-56; fusion of light nuclei and fission of heavy nuclei both move toward the peak.",
+    "caption": "Nuclear binding energy per nucleon. Iron-56 sits at the peak — fusion and fission both release energy by moving toward it. Public domain."
+  },
+  {
+    "file": "File:The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819.jpg",
+    "name": "sun.jpg",
+    "alt": "The Sun imaged in ultraviolet light by NASA's Solar Dynamics Observatory, showing the churning surface of the fusion-powered star.",
+    "caption": "The Sun (NASA/SDO). Public domain (U.S. federal work) — CORROBORATE per course source rule (e.g. ESA/independent solar-observatory image)."
+  },
+  {
+    "file": "File:Nuclear fission chain reaction.svg",
+    "name": "fission_chain.svg",
+    "alt": "Diagram of a nuclear fission chain reaction: a neutron splits a uranium nucleus into fragments and additional neutrons, which split further nuclei.",
+    "caption": "Fission chain reaction (schematic). Check license; redraw as a cartoon if flagged."
+  },
+  {
+    "file": "File:Electric transmission lines.jpg",
+    "name": "transmission_towers.jpg",
+    "alt": "High-voltage electricity transmission towers carrying power lines across open landscape.",
+    "caption": "High-voltage transmission lines — the grid moves power at high voltage to cut resistive losses. [Verify title in discovery mode if not found.]"
+  },
+  {
+    "file": "File:Blackout2003.jpg",
+    "name": "blackout_2003_satellite.jpg",
+    "alt": "Satellite night images of the northeastern United States before and during the August 2003 blackout, showing the region gone dark.",
+    "caption": "The Northeast before/during the Aug 14, 2003 blackout (DMSP/NOAA). Federal/PD — CORROBORATE. [Optional; omit if license unclear.]"
+  }
+]
